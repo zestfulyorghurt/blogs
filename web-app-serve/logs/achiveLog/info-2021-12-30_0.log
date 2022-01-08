@@ -1,0 +1,397 @@
+2021-12-30 15:27:16.500 INFO  com.zestfulYoghurt.zy.ZyApplication - Starting ZyApplication on zhangyi211123 with PID 1724 (C:\Users\860120017\Desktop\project\web-app-serve\web-app-serve\target\classes started by 860120017 in C:\Users\860120017\Desktop\project\web-app-serve)
+2021-12-30 15:27:16.500 INFO  com.zestfulYoghurt.zy.ZyApplication - The following profiles are active: logger,mail,mybatisDev,mysql,redis
+2021-12-30 15:27:16.531 INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-12-30 15:27:16.531 INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-12-30 15:27:17.094 INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-12-30 15:27:17.094 INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2021-12-30 15:27:17.125 INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 11ms. Found 0 Redis repository interfaces.
+2021-12-30 15:27:17.281 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'shiroConfiguration' of type [com.zestfulYoghurt.zy.configuration.ShiroConfiguration$$EnhancerBySpringCGLIB$$96051375] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-12-30 15:27:17.500 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'mybatis-org.mybatis.spring.boot.autoconfigure.MybatisProperties' of type [org.mybatis.spring.boot.autoconfigure.MybatisProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-12-30 15:27:17.515 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.mybatis.spring.boot.autoconfigure.MybatisAutoConfiguration' of type [org.mybatis.spring.boot.autoconfigure.MybatisAutoConfiguration$$EnhancerBySpringCGLIB$$5227aa46] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-12-30 15:27:17.515 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.boot.autoconfigure.jdbc.DataSourceConfiguration$Hikari' of type [org.springframework.boot.autoconfigure.jdbc.DataSourceConfiguration$Hikari] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-12-30 15:27:17.515 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'spring.datasource-org.springframework.boot.autoconfigure.jdbc.DataSourceProperties' of type [org.springframework.boot.autoconfigure.jdbc.DataSourceProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-12-30 15:27:17.531 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'dataSource' of type [com.zaxxer.hikari.HikariDataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-12-30 15:27:17.609 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'sqlSessionFactory' of type [org.apache.ibatis.session.defaults.DefaultSqlSessionFactory] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-12-30 15:27:17.609 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'sqlSessionTemplate' of type [org.mybatis.spring.SqlSessionTemplate] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-12-30 15:27:17.609 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'userMapper' of type [org.mybatis.spring.mapper.MapperFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-12-30 15:27:17.609 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'userMapper' of type [com.sun.proxy.$Proxy50] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-12-30 15:27:17.609 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'myShiroRealm' of type [com.zestfulYoghurt.zy.shiro.LoginRealm] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-12-30 15:27:17.625 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'securityManager' of type [org.apache.shiro.web.mgt.DefaultWebSecurityManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-12-30 15:27:17.656 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'authorizationAttributeSourceAdvisor' of type [org.apache.shiro.spring.security.interceptor.AuthorizationAttributeSourceAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-12-30 15:27:18.078 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8086 (http)
+2021-12-30 15:27:18.093 INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8086"]
+2021-12-30 15:27:18.093 INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2021-12-30 15:27:18.093 INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.39]
+2021-12-30 15:27:18.296 INFO  org.apache.jasper.servlet.TldScanner - At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2021-12-30 15:27:18.296 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2021-12-30 15:27:18.296 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1765 ms
+2021-12-30 15:27:18.640 INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2021-12-30 15:27:19.312 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2021-12-30 15:27:19.327 INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8086"]
+2021-12-30 15:27:19.343 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8086 (http) with context path ''
+2021-12-30 15:27:19.359 INFO  com.zestfulYoghurt.zy.ZyApplication - Started ZyApplication in 3.243 seconds (JVM running for 4.509)
+2021-12-30 15:43:47.714 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-12-30 15:43:47.715 INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2021-12-30 15:43:47.724 INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 9 ms
+2021-12-30 15:43:47.762 INFO  c.zestfulYoghurt.zy.aop.LoggerAop.LoggerAopAround - 
+start====
+全路径名：com.zestfulYoghurt.zy.controllers.testController.Test1@1b69548d
+方 法 名：getServerPort
+====start
+end====
+全路径名：com.zestfulYoghurt.zy.controllers.testController.Test1@1b69548d
+方 法 名：getServerPort
+====end
+
+
+2021-12-30 15:43:47.765 INFO  c.zestfulYoghurt.zy.aop.LoggerAop.LoggerAopAround - 
+
+2021-12-30 15:43:47.785 INFO  c.zestfulYoghurt.zy.aop.LoggerAop.LoggerAopAround - 
+start====
+全路径名：com.zestfulYoghurt.zy.controllers.testController.Test1@1b69548d
+方 法 名：getServerPort
+====start
+end====
+全路径名：com.zestfulYoghurt.zy.controllers.testController.Test1@1b69548d
+方 法 名：getServerPort
+====end
+
+
+2021-12-30 15:43:47.785 INFO  c.zestfulYoghurt.zy.aop.LoggerAop.LoggerAopAround - 
+
+2021-12-30 15:43:47.787 INFO  c.zestfulYoghurt.zy.aop.LoggerAop.LoggerAopAround - 
+start====
+全路径名：com.zestfulYoghurt.zy.controllers.testController.Test1@1b69548d
+方 法 名：getServerPort
+====start
+end====
+全路径名：com.zestfulYoghurt.zy.controllers.testController.Test1@1b69548d
+方 法 名：getServerPort
+====end
+
+
+2021-12-30 15:43:47.787 INFO  c.zestfulYoghurt.zy.aop.LoggerAop.LoggerAopAround - 
+
+2021-12-30 15:44:31.382 INFO  c.zestfulYoghurt.zy.aop.LoggerAop.LoggerAopAround - 
+start====
+全路径名：com.zestfulYoghurt.zy.controllers.login.LoginController@415f8689
+方 法 名：loginCheckOut
+====start
+end====
+全路径名：com.zestfulYoghurt.zy.controllers.login.LoginController@415f8689
+方 法 名：loginCheckOut
+====end
+
+
+2021-12-30 15:44:31.382 INFO  c.zestfulYoghurt.zy.aop.LoggerAop.LoggerAopAround - 
+
+2021-12-30 15:44:58.414 INFO  c.zestfulYoghurt.zy.aop.LoggerAop.LoggerAopAround - 
+start====
+全路径名：com.zestfulYoghurt.zy.controllers.login.LoginController@415f8689
+方 法 名：loginCheckOut
+====start
+end====
+全路径名：com.zestfulYoghurt.zy.controllers.login.LoginController@415f8689
+方 法 名：loginCheckOut
+====end
+
+
+2021-12-30 15:44:58.414 INFO  c.zestfulYoghurt.zy.aop.LoggerAop.LoggerAopAround - 
+
+2021-12-30 17:13:02.231 INFO  c.zestfulYoghurt.zy.aop.LoggerAop.LoggerAopAround - 
+start====
+全路径名：com.zestfulYoghurt.zy.controllers.login.LoginController@415f8689
+方 法 名：loginCheckOut
+====start
+end====
+全路径名：com.zestfulYoghurt.zy.controllers.login.LoginController@415f8689
+方 法 名：loginCheckOut
+====end
+
+
+2021-12-30 17:13:02.232 INFO  c.zestfulYoghurt.zy.aop.LoggerAop.LoggerAopAround - 
+
+2021-12-30 17:13:12.668 INFO  c.zestfulYoghurt.zy.aop.LoggerAop.LoggerAopAround - 
+start====
+全路径名：com.zestfulYoghurt.zy.controllers.login.LoginController@415f8689
+方 法 名：loginCheckOut
+====start
+end====
+全路径名：com.zestfulYoghurt.zy.controllers.login.LoginController@415f8689
+方 法 名：loginCheckOut
+====end
+
+
+2021-12-30 17:13:12.668 INFO  c.zestfulYoghurt.zy.aop.LoggerAop.LoggerAopAround - 
+
+2021-12-30 17:13:34.899 INFO  c.zestfulYoghurt.zy.aop.LoggerAop.LoggerAopAround - 
+start====
+全路径名：com.zestfulYoghurt.zy.controllers.login.LoginController@415f8689
+方 法 名：loginCheckOut
+====start
+end====
+全路径名：com.zestfulYoghurt.zy.controllers.login.LoginController@415f8689
+方 法 名：loginCheckOut
+====end
+
+
+2021-12-30 17:13:34.900 INFO  c.zestfulYoghurt.zy.aop.LoggerAop.LoggerAopAround - 
+
+2021-12-30 17:13:55.851 INFO  c.zestfulYoghurt.zy.aop.LoggerAop.LoggerAopAround - 
+start====
+全路径名：com.zestfulYoghurt.zy.controllers.login.LoginController@415f8689
+方 法 名：loginCheckOut
+====start
+end====
+全路径名：com.zestfulYoghurt.zy.controllers.login.LoginController@415f8689
+方 法 名：loginCheckOut
+====end
+
+
+2021-12-30 17:13:55.852 INFO  c.zestfulYoghurt.zy.aop.LoggerAop.LoggerAopAround - 
+
+2021-12-30 17:14:16.980 INFO  c.zestfulYoghurt.zy.aop.LoggerAop.LoggerAopAround - 
+start====
+全路径名：com.zestfulYoghurt.zy.controllers.testController.Test1@1b69548d
+方 法 名：getServerPort
+====start
+end====
+全路径名：com.zestfulYoghurt.zy.controllers.testController.Test1@1b69548d
+方 法 名：getServerPort
+====end
+
+
+2021-12-30 17:14:16.981 INFO  c.zestfulYoghurt.zy.aop.LoggerAop.LoggerAopAround - 
+
+2021-12-30 17:14:16.982 INFO  c.zestfulYoghurt.zy.aop.LoggerAop.LoggerAopAround - 
+start====
+全路径名：com.zestfulYoghurt.zy.controllers.testController.Test1@1b69548d
+方 法 名：getServerPort
+====start
+end====
+全路径名：com.zestfulYoghurt.zy.controllers.testController.Test1@1b69548d
+方 法 名：getServerPort
+====end
+
+
+2021-12-30 17:14:16.983 INFO  c.zestfulYoghurt.zy.aop.LoggerAop.LoggerAopAround - 
+
+2021-12-30 17:14:16.984 INFO  c.zestfulYoghurt.zy.aop.LoggerAop.LoggerAopAround - 
+start====
+全路径名：com.zestfulYoghurt.zy.controllers.testController.Test1@1b69548d
+方 法 名：getServerPort
+====start
+end====
+全路径名：com.zestfulYoghurt.zy.controllers.testController.Test1@1b69548d
+方 法 名：getServerPort
+====end
+
+
+2021-12-30 17:14:16.984 INFO  c.zestfulYoghurt.zy.aop.LoggerAop.LoggerAopAround - 
+
+2021-12-30 17:17:30.346 INFO  c.zestfulYoghurt.zy.aop.LoggerAop.LoggerAopAround - 
+start====
+全路径名：com.zestfulYoghurt.zy.controllers.login.LoginController@415f8689
+方 法 名：loginCheckOut
+====start
+end====
+全路径名：com.zestfulYoghurt.zy.controllers.login.LoginController@415f8689
+方 法 名：loginCheckOut
+====end
+
+
+2021-12-30 17:17:30.346 INFO  c.zestfulYoghurt.zy.aop.LoggerAop.LoggerAopAround - 
+
+2021-12-30 17:17:59.040 INFO  c.zestfulYoghurt.zy.aop.LoggerAop.LoggerAopAround - 
+start====
+全路径名：com.zestfulYoghurt.zy.controllers.login.LoginController@415f8689
+方 法 名：loginCheckOut
+====start
+end====
+全路径名：com.zestfulYoghurt.zy.controllers.login.LoginController@415f8689
+方 法 名：loginCheckOut
+====end
+
+
+2021-12-30 17:17:59.041 INFO  c.zestfulYoghurt.zy.aop.LoggerAop.LoggerAopAround - 
+
+2021-12-30 17:18:58.703 INFO  c.zestfulYoghurt.zy.aop.LoggerAop.LoggerAopAround - 
+start====
+全路径名：com.zestfulYoghurt.zy.controllers.login.LoginController@415f8689
+方 法 名：loginCheckOut
+====start
+end====
+全路径名：com.zestfulYoghurt.zy.controllers.login.LoginController@415f8689
+方 法 名：loginCheckOut
+====end
+
+
+2021-12-30 17:18:58.703 INFO  c.zestfulYoghurt.zy.aop.LoggerAop.LoggerAopAround - 
+
+2021-12-30 17:20:12.970 INFO  c.zestfulYoghurt.zy.aop.LoggerAop.LoggerAopAround - 
+start====
+全路径名：com.zestfulYoghurt.zy.controllers.login.LoginController@415f8689
+方 法 名：loginCheckOut
+====start
+end====
+全路径名：com.zestfulYoghurt.zy.controllers.login.LoginController@415f8689
+方 法 名：loginCheckOut
+====end
+
+
+2021-12-30 17:20:12.970 INFO  c.zestfulYoghurt.zy.aop.LoggerAop.LoggerAopAround - 
+
+2021-12-30 17:20:51.926 INFO  c.zestfulYoghurt.zy.aop.LoggerAop.LoggerAopAround - 
+start====
+全路径名：com.zestfulYoghurt.zy.controllers.login.LoginController@415f8689
+方 法 名：loginCheckOut
+====start
+end====
+全路径名：com.zestfulYoghurt.zy.controllers.login.LoginController@415f8689
+方 法 名：loginCheckOut
+====end
+
+
+2021-12-30 17:20:51.926 INFO  c.zestfulYoghurt.zy.aop.LoggerAop.LoggerAopAround - 
+
+2021-12-30 17:31:17.700 INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2021-12-30 17:31:29.114 INFO  com.zestfulYoghurt.zy.ZyApplication - Starting ZyApplication on zhangyi211123 with PID 16736 (C:\Users\860120017\Desktop\project\web-app-serve\web-app-serve\target\classes started by 860120017 in C:\Users\860120017\Desktop\project\web-app-serve)
+2021-12-30 17:31:29.115 INFO  com.zestfulYoghurt.zy.ZyApplication - The following profiles are active: logger,mail,mybatisDev,mysql,redis
+2021-12-30 17:31:29.151 INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-12-30 17:31:29.151 INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-12-30 17:31:29.598 INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-12-30 17:31:29.598 INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2021-12-30 17:31:29.629 INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 10ms. Found 0 Redis repository interfaces.
+2021-12-30 17:31:29.754 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'shiroConfiguration' of type [com.zestfulYoghurt.zy.configuration.ShiroConfiguration$$EnhancerBySpringCGLIB$$3ae2bebf] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-12-30 17:31:29.895 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'mybatis-org.mybatis.spring.boot.autoconfigure.MybatisProperties' of type [org.mybatis.spring.boot.autoconfigure.MybatisProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-12-30 17:31:29.910 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.mybatis.spring.boot.autoconfigure.MybatisAutoConfiguration' of type [org.mybatis.spring.boot.autoconfigure.MybatisAutoConfiguration$$EnhancerBySpringCGLIB$$f7055590] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-12-30 17:31:29.910 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.boot.autoconfigure.jdbc.DataSourceConfiguration$Hikari' of type [org.springframework.boot.autoconfigure.jdbc.DataSourceConfiguration$Hikari] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-12-30 17:31:29.910 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'spring.datasource-org.springframework.boot.autoconfigure.jdbc.DataSourceProperties' of type [org.springframework.boot.autoconfigure.jdbc.DataSourceProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-12-30 17:31:29.926 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'dataSource' of type [com.zaxxer.hikari.HikariDataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-12-30 17:31:30.004 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'sqlSessionFactory' of type [org.apache.ibatis.session.defaults.DefaultSqlSessionFactory] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-12-30 17:31:30.004 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'sqlSessionTemplate' of type [org.mybatis.spring.SqlSessionTemplate] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-12-30 17:31:30.004 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'userMapper' of type [org.mybatis.spring.mapper.MapperFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-12-30 17:31:30.004 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'userMapper' of type [com.sun.proxy.$Proxy50] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-12-30 17:31:30.004 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'myShiroRealm' of type [com.zestfulYoghurt.zy.shiro.LoginRealm] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-12-30 17:31:30.004 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'securityManager' of type [org.apache.shiro.web.mgt.DefaultWebSecurityManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-12-30 17:31:30.035 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'authorizationAttributeSourceAdvisor' of type [org.apache.shiro.spring.security.interceptor.AuthorizationAttributeSourceAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-12-30 17:31:30.395 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8086 (http)
+2021-12-30 17:31:30.398 INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8086"]
+2021-12-30 17:31:30.398 INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2021-12-30 17:31:30.398 INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.39]
+2021-12-30 17:31:30.556 INFO  org.apache.jasper.servlet.TldScanner - At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2021-12-30 17:31:30.556 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2021-12-30 17:31:30.556 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1405 ms
+2021-12-30 17:31:30.884 INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2021-12-30 17:31:31.494 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2021-12-30 17:31:31.510 INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8086"]
+2021-12-30 17:31:31.526 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8086 (http) with context path ''
+2021-12-30 17:31:31.541 INFO  com.zestfulYoghurt.zy.ZyApplication - Started ZyApplication in 2.772 seconds (JVM running for 3.235)
+2021-12-30 17:31:39.838 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-12-30 17:31:39.838 INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2021-12-30 17:31:39.853 INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 15 ms
+2021-12-30 17:31:39.887 INFO  c.zestfulYoghurt.zy.aop.LoggerAop.LoggerAopAround - 
+start====
+全路径名：com.zestfulYoghurt.zy.controllers.testController.Test1@3ee70ae
+方 法 名：getServerPort
+====start
+end====
+全路径名：com.zestfulYoghurt.zy.controllers.testController.Test1@3ee70ae
+方 法 名：getServerPort
+====end
+
+
+2021-12-30 17:31:39.890 INFO  c.zestfulYoghurt.zy.aop.LoggerAop.LoggerAopAround - 
+
+2021-12-30 17:31:39.910 INFO  c.zestfulYoghurt.zy.aop.LoggerAop.LoggerAopAround - 
+start====
+全路径名：com.zestfulYoghurt.zy.controllers.testController.Test1@3ee70ae
+方 法 名：getServerPort
+====start
+end====
+全路径名：com.zestfulYoghurt.zy.controllers.testController.Test1@3ee70ae
+方 法 名：getServerPort
+====end
+
+
+2021-12-30 17:31:39.910 INFO  c.zestfulYoghurt.zy.aop.LoggerAop.LoggerAopAround - 
+
+2021-12-30 17:31:39.912 INFO  c.zestfulYoghurt.zy.aop.LoggerAop.LoggerAopAround - 
+start====
+全路径名：com.zestfulYoghurt.zy.controllers.testController.Test1@3ee70ae
+方 法 名：getServerPort
+====start
+end====
+全路径名：com.zestfulYoghurt.zy.controllers.testController.Test1@3ee70ae
+方 法 名：getServerPort
+====end
+
+
+2021-12-30 17:31:39.912 INFO  c.zestfulYoghurt.zy.aop.LoggerAop.LoggerAopAround - 
+
+2021-12-30 17:31:43.656 INFO  c.zestfulYoghurt.zy.aop.LoggerAop.LoggerAopAround - 
+start====
+全路径名：com.zestfulYoghurt.zy.controllers.login.LoginController@2a060865
+方 法 名：loginCheckOut
+====start
+end====
+全路径名：com.zestfulYoghurt.zy.controllers.login.LoginController@2a060865
+方 法 名：loginCheckOut
+====end
+
+
+2021-12-30 17:31:43.656 INFO  c.zestfulYoghurt.zy.aop.LoggerAop.LoggerAopAround - 
+
+2021-12-30 17:32:00.985 INFO  c.zestfulYoghurt.zy.aop.LoggerAop.LoggerAopAround - 
+start====
+全路径名：com.zestfulYoghurt.zy.controllers.login.LoginController@2a060865
+方 法 名：loginCheckOut
+====start
+end====
+全路径名：com.zestfulYoghurt.zy.controllers.login.LoginController@2a060865
+方 法 名：loginCheckOut
+====end
+
+
+2021-12-30 17:32:00.985 INFO  c.zestfulYoghurt.zy.aop.LoggerAop.LoggerAopAround - 
+
+2021-12-30 17:33:28.458 INFO  c.zestfulYoghurt.zy.aop.LoggerAop.LoggerAopAround - 
+start====
+全路径名：com.zestfulYoghurt.zy.controllers.testController.Test1@3ee70ae
+方 法 名：getServerPort
+====start
+end====
+全路径名：com.zestfulYoghurt.zy.controllers.testController.Test1@3ee70ae
+方 法 名：getServerPort
+====end
+
+
+2021-12-30 17:33:28.458 INFO  c.zestfulYoghurt.zy.aop.LoggerAop.LoggerAopAround - 
+
+2021-12-30 17:33:28.460 INFO  c.zestfulYoghurt.zy.aop.LoggerAop.LoggerAopAround - 
+start====
+全路径名：com.zestfulYoghurt.zy.controllers.testController.Test1@3ee70ae
+方 法 名：getServerPort
+====start
+end====
+全路径名：com.zestfulYoghurt.zy.controllers.testController.Test1@3ee70ae
+方 法 名：getServerPort
+====end
+
+
+2021-12-30 17:33:28.460 INFO  c.zestfulYoghurt.zy.aop.LoggerAop.LoggerAopAround - 
+
+2021-12-30 17:33:28.464 INFO  c.zestfulYoghurt.zy.aop.LoggerAop.LoggerAopAround - 
+start====
+全路径名：com.zestfulYoghurt.zy.controllers.testController.Test1@3ee70ae
+方 法 名：getServerPort
+====start
+end====
+全路径名：com.zestfulYoghurt.zy.controllers.testController.Test1@3ee70ae
+方 法 名：getServerPort
+====end
+
+
+2021-12-30 17:33:28.464 INFO  c.zestfulYoghurt.zy.aop.LoggerAop.LoggerAopAround - 
+
+2021-12-30 18:33:12.054 INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'

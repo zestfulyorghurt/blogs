@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.zestfulYoghurt.zy.mappers.BlogMapper">
+    <select id="select" resultType="com.zestfulYoghurt.zy.pojos.basePojo.Blog"
+            parameterType="com.zestfulYoghurt.zy.pojos.basePojo.Blog">
+        <if test="blogId = -1">
+            select * from blog_base_info
+        </if>
+        <if test="blogId != -1">
+            select * from blog_base_info where blog_id = #{blogId}
+        </if>
+    </select>
+    <insert id="add" parameterType="com.zestfulYoghurt.zy.pojos.basePojo.Blog">
+
+    </insert>
+    <delete id="delete" parameterType="com.zestfulYoghurt.zy.pojos.basePojo.Blog">
+
+    </delete>
+</mapper>
+    

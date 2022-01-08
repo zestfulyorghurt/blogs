@@ -1,0 +1,702 @@
+2021-09-14 09:58:42.687 INFO  com.zestfulYoghurt.zy.ZyApplication - Starting ZyApplication on zhangyi with PID 6040 (I:\mySelfProjectBlog\blogs\blogs\sources\web-app-serve\target\classes started by 860120017 in I:\mySelfProjectBlog\blogs\blogs\sources\web-app-serve)
+2021-09-14 09:58:42.691 INFO  com.zestfulYoghurt.zy.ZyApplication - No active profile set, falling back to default profiles: default
+2021-09-14 09:58:42.741 INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-09-14 09:58:42.742 INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-09-14 09:58:43.698 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'shiroConfiguration' of type [com.zestfulYoghurt.zy.configuration.shiroConfiguration$$EnhancerBySpringCGLIB$$e4147fd3] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-09-14 09:58:44.128 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'mybatis-org.mybatis.spring.boot.autoconfigure.MybatisProperties' of type [org.mybatis.spring.boot.autoconfigure.MybatisProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-09-14 09:58:44.140 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.mybatis.spring.boot.autoconfigure.MybatisAutoConfiguration' of type [org.mybatis.spring.boot.autoconfigure.MybatisAutoConfiguration$$EnhancerBySpringCGLIB$$6b7ab6c4] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-09-14 09:58:44.144 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.boot.autoconfigure.jdbc.DataSourceConfiguration$Hikari' of type [org.springframework.boot.autoconfigure.jdbc.DataSourceConfiguration$Hikari] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-09-14 09:58:44.158 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'spring.datasource-org.springframework.boot.autoconfigure.jdbc.DataSourceProperties' of type [org.springframework.boot.autoconfigure.jdbc.DataSourceProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-09-14 09:58:44.181 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'dataSource' of type [com.zaxxer.hikari.HikariDataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-09-14 09:58:44.295 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'sqlSessionFactory' of type [org.apache.ibatis.session.defaults.DefaultSqlSessionFactory] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-09-14 09:58:44.299 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'sqlSessionTemplate' of type [org.mybatis.spring.SqlSessionTemplate] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-09-14 09:58:44.300 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'userMapper' of type [org.mybatis.spring.mapper.MapperFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-09-14 09:58:44.302 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'userMapper' of type [com.sun.proxy.$Proxy48] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-09-14 09:58:44.303 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'myShiroRealm' of type [com.zestfulYoghurt.zy.shiro.loginRealm] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-09-14 09:58:44.305 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'securityManager' of type [org.apache.shiro.web.mgt.DefaultWebSecurityManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-09-14 09:58:44.340 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'authorizationAttributeSourceAdvisor' of type [org.apache.shiro.spring.security.interceptor.AuthorizationAttributeSourceAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-09-14 09:58:44.871 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8085 (http)
+2021-09-14 09:58:44.881 INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8085"]
+2021-09-14 09:58:44.881 INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2021-09-14 09:58:44.882 INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.39]
+2021-09-14 09:58:44.980 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2021-09-14 09:58:44.980 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2235 ms
+2021-09-14 09:58:45.482 INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2021-09-14 09:58:45.932 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2021-09-14 09:58:45.951 INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8085"]
+2021-09-14 09:58:45.969 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8085 (http) with context path ''
+2021-09-14 09:58:45.994 INFO  com.zestfulYoghurt.zy.ZyApplication - Started ZyApplication in 3.706 seconds (JVM running for 4.668)
+2021-09-14 09:59:33.712 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-09-14 09:59:33.712 INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2021-09-14 09:59:33.738 INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 26 ms
+2021-09-14 09:59:33.771 INFO  c.z.zy.aop.controllerAOP.controllerAopAround - getBasicInformationOfBlog
+2021-09-14 09:59:33.771 INFO  c.z.zy.aop.controllerAOP.controllerAopAround - com.zestfulYoghurt.zy.controllers.getResources.GetDate@25aa6944
+2021-09-14 09:59:33.775 INFO  c.z.zy.aop.controllerAOP.controllerAopAround - 我是aop的后置通知
+2021-09-14 11:31:25.916 INFO  com.zestfulYoghurt.zy.ZyApplication - Starting ZyApplication on zhangyi with PID 7076 (I:\mySelfProjectBlog\blogs\blogs\sources\web-app-serve\target\classes started by 860120017 in I:\mySelfProjectBlog\blogs\blogs\sources\web-app-serve)
+2021-09-14 11:31:25.918 INFO  com.zestfulYoghurt.zy.ZyApplication - No active profile set, falling back to default profiles: default
+2021-09-14 11:31:25.969 INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-09-14 11:31:25.969 INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-09-14 11:31:26.730 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'shiroConfiguration' of type [com.zestfulYoghurt.zy.configuration.shiroConfiguration$$EnhancerBySpringCGLIB$$bd74a8c3] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-09-14 11:31:27.073 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'mybatis-org.mybatis.spring.boot.autoconfigure.MybatisProperties' of type [org.mybatis.spring.boot.autoconfigure.MybatisProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-09-14 11:31:27.080 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.mybatis.spring.boot.autoconfigure.MybatisAutoConfiguration' of type [org.mybatis.spring.boot.autoconfigure.MybatisAutoConfiguration$$EnhancerBySpringCGLIB$$44dadfb4] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-09-14 11:31:27.082 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.boot.autoconfigure.jdbc.DataSourceConfiguration$Hikari' of type [org.springframework.boot.autoconfigure.jdbc.DataSourceConfiguration$Hikari] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-09-14 11:31:27.092 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'spring.datasource-org.springframework.boot.autoconfigure.jdbc.DataSourceProperties' of type [org.springframework.boot.autoconfigure.jdbc.DataSourceProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-09-14 11:31:27.112 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'dataSource' of type [com.zaxxer.hikari.HikariDataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-09-14 11:31:27.225 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'sqlSessionFactory' of type [org.apache.ibatis.session.defaults.DefaultSqlSessionFactory] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-09-14 11:31:27.229 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'sqlSessionTemplate' of type [org.mybatis.spring.SqlSessionTemplate] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-09-14 11:31:27.230 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'userMapper' of type [org.mybatis.spring.mapper.MapperFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-09-14 11:31:27.231 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'userMapper' of type [com.sun.proxy.$Proxy48] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-09-14 11:31:27.232 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'myShiroRealm' of type [com.zestfulYoghurt.zy.shiro.loginRealm] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-09-14 11:31:27.235 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'securityManager' of type [org.apache.shiro.web.mgt.DefaultWebSecurityManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-09-14 11:31:27.280 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'authorizationAttributeSourceAdvisor' of type [org.apache.shiro.spring.security.interceptor.AuthorizationAttributeSourceAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-09-14 11:31:49.850 INFO  com.zestfulYoghurt.zy.ZyApplication - Starting ZyApplication on zhangyi with PID 1624 (I:\mySelfProjectBlog\blogs\blogs\sources\web-app-serve\target\classes started by 860120017 in I:\mySelfProjectBlog\blogs\blogs\sources\web-app-serve)
+2021-09-14 11:31:49.852 INFO  com.zestfulYoghurt.zy.ZyApplication - No active profile set, falling back to default profiles: default
+2021-09-14 11:31:49.905 INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-09-14 11:31:49.905 INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-09-14 11:31:50.685 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'shiroConfiguration' of type [com.zestfulYoghurt.zy.configuration.shiroConfiguration$$EnhancerBySpringCGLIB$$dfdd9314] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-09-14 11:31:51.011 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'mybatis-org.mybatis.spring.boot.autoconfigure.MybatisProperties' of type [org.mybatis.spring.boot.autoconfigure.MybatisProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-09-14 11:31:51.017 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.mybatis.spring.boot.autoconfigure.MybatisAutoConfiguration' of type [org.mybatis.spring.boot.autoconfigure.MybatisAutoConfiguration$$EnhancerBySpringCGLIB$$6743ca05] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-09-14 11:31:51.019 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.boot.autoconfigure.jdbc.DataSourceConfiguration$Hikari' of type [org.springframework.boot.autoconfigure.jdbc.DataSourceConfiguration$Hikari] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-09-14 11:31:51.028 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'spring.datasource-org.springframework.boot.autoconfigure.jdbc.DataSourceProperties' of type [org.springframework.boot.autoconfigure.jdbc.DataSourceProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-09-14 11:31:51.049 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'dataSource' of type [com.zaxxer.hikari.HikariDataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-09-14 11:31:51.161 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'sqlSessionFactory' of type [org.apache.ibatis.session.defaults.DefaultSqlSessionFactory] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-09-14 11:31:51.167 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'sqlSessionTemplate' of type [org.mybatis.spring.SqlSessionTemplate] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-09-14 11:31:51.168 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'userMapper' of type [org.mybatis.spring.mapper.MapperFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-09-14 11:31:51.169 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'userMapper' of type [com.sun.proxy.$Proxy48] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-09-14 11:31:51.169 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'myShiroRealm' of type [com.zestfulYoghurt.zy.shiro.loginRealm] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-09-14 11:31:51.172 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'securityManager' of type [org.apache.shiro.web.mgt.DefaultWebSecurityManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-09-14 11:31:51.217 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'authorizationAttributeSourceAdvisor' of type [org.apache.shiro.spring.security.interceptor.AuthorizationAttributeSourceAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-09-14 11:33:38.174 INFO  com.zestfulYoghurt.zy.ZyApplication - Starting ZyApplication on zhangyi with PID 8724 (I:\mySelfProjectBlog\blogs\blogs\sources\web-app-serve\target\classes started by 860120017 in I:\mySelfProjectBlog\blogs\blogs\sources\web-app-serve)
+2021-09-14 11:33:38.175 INFO  com.zestfulYoghurt.zy.ZyApplication - No active profile set, falling back to default profiles: default
+2021-09-14 11:33:38.229 INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-09-14 11:33:38.230 INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-09-14 11:33:38.993 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'shiroConfiguration' of type [com.zestfulYoghurt.zy.configuration.shiroConfiguration$$EnhancerBySpringCGLIB$$493a8f0a] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-09-14 11:33:39.316 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'mybatis-org.mybatis.spring.boot.autoconfigure.MybatisProperties' of type [org.mybatis.spring.boot.autoconfigure.MybatisProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-09-14 11:33:39.323 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.mybatis.spring.boot.autoconfigure.MybatisAutoConfiguration' of type [org.mybatis.spring.boot.autoconfigure.MybatisAutoConfiguration$$EnhancerBySpringCGLIB$$d0a0c5fb] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-09-14 11:33:39.325 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.boot.autoconfigure.jdbc.DataSourceConfiguration$Hikari' of type [org.springframework.boot.autoconfigure.jdbc.DataSourceConfiguration$Hikari] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-09-14 11:33:39.335 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'spring.datasource-org.springframework.boot.autoconfigure.jdbc.DataSourceProperties' of type [org.springframework.boot.autoconfigure.jdbc.DataSourceProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-09-14 11:33:39.355 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'dataSource' of type [com.zaxxer.hikari.HikariDataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-09-14 11:33:39.464 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'sqlSessionFactory' of type [org.apache.ibatis.session.defaults.DefaultSqlSessionFactory] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-09-14 11:33:39.469 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'sqlSessionTemplate' of type [org.mybatis.spring.SqlSessionTemplate] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-09-14 11:33:39.469 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'userMapper' of type [org.mybatis.spring.mapper.MapperFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-09-14 11:33:39.471 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'userMapper' of type [com.sun.proxy.$Proxy48] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-09-14 11:33:39.472 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'myShiroRealm' of type [com.zestfulYoghurt.zy.shiro.loginRealm] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-09-14 11:33:39.474 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'securityManager' of type [org.apache.shiro.web.mgt.DefaultWebSecurityManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-09-14 11:33:39.519 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'authorizationAttributeSourceAdvisor' of type [org.apache.shiro.spring.security.interceptor.AuthorizationAttributeSourceAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-09-14 11:33:40.031 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8085 (http)
+2021-09-14 11:33:40.038 INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8085"]
+2021-09-14 11:33:40.038 INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2021-09-14 11:33:40.038 INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.39]
+2021-09-14 11:33:40.143 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2021-09-14 11:33:40.143 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1913 ms
+2021-09-14 11:33:40.872 INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2021-09-14 11:33:41.484 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2021-09-14 11:33:41.506 INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8085"]
+2021-09-14 11:33:41.528 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8085 (http) with context path ''
+2021-09-14 11:33:41.551 INFO  com.zestfulYoghurt.zy.ZyApplication - Started ZyApplication in 3.859 seconds (JVM running for 4.859)
+2021-09-14 11:33:48.409 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-09-14 11:33:48.409 INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2021-09-14 11:33:48.442 INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 33 ms
+2021-09-14 11:33:48.481 INFO  c.z.zy.aop.controllerAOP.controllerAopAround - getBasicInformationOfBlog
+2021-09-14 11:33:48.481 INFO  c.z.zy.aop.controllerAOP.controllerAopAround - com.zestfulYoghurt.zy.controllers.getResources.GetDate@2ae7329
+2021-09-14 11:33:48.505 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2021-09-14 11:33:48.644 INFO  com.zaxxer.hikari.pool.PoolBase - HikariPool-1 - Driver does not support get/set network timeout for connections. (com.mysql.jdbc.JDBC4Connection.getNetworkTimeout()I)
+2021-09-14 11:33:48.647 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2021-09-14 11:33:48.817 INFO  c.z.zy.aop.controllerAOP.controllerAopAround - loginCheckOut
+2021-09-14 11:33:48.817 INFO  c.z.zy.aop.controllerAOP.controllerAopAround - com.zestfulYoghurt.zy.controllers.login.LoginController@7bf826c2
+2021-09-14 11:33:48.821 INFO  com.zestfulYoghurt.zy.shiro.loginRealm - 认证
+2021-09-14 11:33:48.821 INFO  com.zestfulYoghurt.zy.shiro.loginRealm - [C@5f0c77d0
+2021-09-14 11:33:48.821 INFO  com.zestfulYoghurt.zy.shiro.loginRealm - 123
+2021-09-14 11:33:48.821 INFO  com.zestfulYoghurt.zy.shiro.loginRealm - zhangyi
+2021-09-14 11:33:48.826 INFO  c.z.zy.aop.controllerAOP.controllerAopAround - 我是aop的后置通知
+2021-09-14 11:36:07.696 INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2021-09-14 11:36:07.697 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2021-09-14 11:36:07.702 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2021-09-14 11:36:25.601 INFO  com.zestfulYoghurt.zy.ZyApplication - Starting ZyApplication on zhangyi with PID 11548 (I:\mySelfProjectBlog\blogs\blogs\sources\web-app-serve\target\classes started by 860120017 in I:\mySelfProjectBlog\blogs\blogs\sources\web-app-serve)
+2021-09-14 11:36:25.602 INFO  com.zestfulYoghurt.zy.ZyApplication - No active profile set, falling back to default profiles: default
+2021-09-14 11:36:25.661 INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-09-14 11:36:25.662 INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-09-14 11:36:26.444 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'shiroConfiguration' of type [com.zestfulYoghurt.zy.configuration.shiroConfiguration$$EnhancerBySpringCGLIB$$13aa0a4] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-09-14 11:36:26.773 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'mybatis-org.mybatis.spring.boot.autoconfigure.MybatisProperties' of type [org.mybatis.spring.boot.autoconfigure.MybatisProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-09-14 11:36:26.780 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.mybatis.spring.boot.autoconfigure.MybatisAutoConfiguration' of type [org.mybatis.spring.boot.autoconfigure.MybatisAutoConfiguration$$EnhancerBySpringCGLIB$$88a0d795] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-09-14 11:36:26.782 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.boot.autoconfigure.jdbc.DataSourceConfiguration$Hikari' of type [org.springframework.boot.autoconfigure.jdbc.DataSourceConfiguration$Hikari] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-09-14 11:36:26.792 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'spring.datasource-org.springframework.boot.autoconfigure.jdbc.DataSourceProperties' of type [org.springframework.boot.autoconfigure.jdbc.DataSourceProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-09-14 11:36:26.814 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'dataSource' of type [com.zaxxer.hikari.HikariDataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-09-14 11:36:26.932 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'sqlSessionFactory' of type [org.apache.ibatis.session.defaults.DefaultSqlSessionFactory] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-09-14 11:36:26.936 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'sqlSessionTemplate' of type [org.mybatis.spring.SqlSessionTemplate] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-09-14 11:36:26.937 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'userMapper' of type [org.mybatis.spring.mapper.MapperFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-09-14 11:36:26.939 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'userMapper' of type [com.sun.proxy.$Proxy48] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-09-14 11:36:26.940 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'myShiroRealm' of type [com.zestfulYoghurt.zy.shiro.loginRealm] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-09-14 11:36:26.943 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'securityManager' of type [org.apache.shiro.web.mgt.DefaultWebSecurityManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-09-14 11:36:26.990 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'authorizationAttributeSourceAdvisor' of type [org.apache.shiro.spring.security.interceptor.AuthorizationAttributeSourceAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-09-14 11:36:27.501 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8085 (http)
+2021-09-14 11:36:27.507 INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8085"]
+2021-09-14 11:36:27.508 INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2021-09-14 11:36:27.509 INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.39]
+2021-09-14 11:36:27.694 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2021-09-14 11:36:27.694 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2032 ms
+2021-09-14 11:36:28.274 INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2021-09-14 11:36:28.885 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2021-09-14 11:36:28.908 INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8085"]
+2021-09-14 11:36:28.930 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8085 (http) with context path ''
+2021-09-14 11:36:28.962 INFO  com.zestfulYoghurt.zy.ZyApplication - Started ZyApplication in 3.868 seconds (JVM running for 4.774)
+2021-09-14 11:36:37.406 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-09-14 11:36:37.407 INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2021-09-14 11:36:37.432 INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 25 ms
+2021-09-14 11:36:37.474 INFO  c.z.zy.aop.controllerAOP.controllerAopAround - getBasicInformationOfBlog
+2021-09-14 11:36:37.474 INFO  c.z.zy.aop.controllerAOP.controllerAopAround - com.zestfulYoghurt.zy.controllers.getResources.GetDate@40dd8726
+2021-09-14 11:36:37.497 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2021-09-14 11:36:37.634 INFO  com.zaxxer.hikari.pool.PoolBase - HikariPool-1 - Driver does not support get/set network timeout for connections. (com.mysql.jdbc.JDBC4Connection.getNetworkTimeout()I)
+2021-09-14 11:36:37.639 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2021-09-14 11:36:37.749 INFO  c.z.zy.aop.controllerAOP.controllerAopAround - loginCheckOut
+2021-09-14 11:36:37.749 INFO  c.z.zy.aop.controllerAOP.controllerAopAround - com.zestfulYoghurt.zy.controllers.login.LoginController@2dda2c7c
+2021-09-14 11:36:37.754 INFO  com.zestfulYoghurt.zy.shiro.loginRealm - 认证
+2021-09-14 11:36:37.754 INFO  com.zestfulYoghurt.zy.shiro.loginRealm - [C@2f2b238a
+2021-09-14 11:36:37.754 INFO  com.zestfulYoghurt.zy.shiro.loginRealm - 123
+2021-09-14 11:36:37.754 INFO  com.zestfulYoghurt.zy.shiro.loginRealm - zhangyi
+2021-09-14 11:36:37.758 INFO  c.z.zy.aop.controllerAOP.controllerAopAround - 我是aop的后置通知
+2021-09-14 11:36:54.592 INFO  c.z.zy.aop.controllerAOP.controllerAopAround - getBasicInformationOfBlog
+2021-09-14 11:36:54.592 INFO  c.z.zy.aop.controllerAOP.controllerAopAround - com.zestfulYoghurt.zy.controllers.getResources.GetDate@40dd8726
+2021-09-14 11:37:58.383 INFO  c.z.zy.aop.controllerAOP.controllerAopAround - loginCheckOut
+2021-09-14 11:37:58.383 INFO  c.z.zy.aop.controllerAOP.controllerAopAround - com.zestfulYoghurt.zy.controllers.login.LoginController@2dda2c7c
+2021-09-14 11:37:58.383 INFO  com.zestfulYoghurt.zy.shiro.loginRealm - 认证
+2021-09-14 11:37:58.383 INFO  com.zestfulYoghurt.zy.shiro.loginRealm - [C@4aff84f3
+2021-09-14 11:37:58.383 INFO  com.zestfulYoghurt.zy.shiro.loginRealm - 123
+2021-09-14 11:37:58.383 INFO  com.zestfulYoghurt.zy.shiro.loginRealm - zhangyi
+2021-09-14 11:37:58.383 INFO  c.z.zy.aop.controllerAOP.controllerAopAround - 我是aop的后置通知
+2021-09-14 11:38:37.218 INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2021-09-14 11:38:37.219 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2021-09-14 11:38:37.224 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2021-09-14 11:39:30.367 INFO  com.zestfulYoghurt.zy.ZyApplication - Starting ZyApplication on zhangyi with PID 4692 (I:\mySelfProjectBlog\blogs\blogs\sources\web-app-serve\target\classes started by 860120017 in I:\mySelfProjectBlog\blogs\blogs\sources\web-app-serve)
+2021-09-14 11:39:30.369 INFO  com.zestfulYoghurt.zy.ZyApplication - No active profile set, falling back to default profiles: default
+2021-09-14 11:39:30.432 INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-09-14 11:39:30.433 INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-09-14 11:39:31.287 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'shiroConfiguration' of type [com.zestfulYoghurt.zy.configuration.shiroConfiguration$$EnhancerBySpringCGLIB$$1b01ea0] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-09-14 11:39:31.663 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'mybatis-org.mybatis.spring.boot.autoconfigure.MybatisProperties' of type [org.mybatis.spring.boot.autoconfigure.MybatisProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-09-14 11:39:31.670 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.mybatis.spring.boot.autoconfigure.MybatisAutoConfiguration' of type [org.mybatis.spring.boot.autoconfigure.MybatisAutoConfiguration$$EnhancerBySpringCGLIB$$89165591] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-09-14 11:39:31.672 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.boot.autoconfigure.jdbc.DataSourceConfiguration$Hikari' of type [org.springframework.boot.autoconfigure.jdbc.DataSourceConfiguration$Hikari] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-09-14 11:39:31.682 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'spring.datasource-org.springframework.boot.autoconfigure.jdbc.DataSourceProperties' of type [org.springframework.boot.autoconfigure.jdbc.DataSourceProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-09-14 11:39:31.706 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'dataSource' of type [com.zaxxer.hikari.HikariDataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-09-14 11:39:45.568 INFO  com.zestfulYoghurt.zy.ZyApplication - Starting ZyApplication on zhangyi with PID 6676 (I:\mySelfProjectBlog\blogs\blogs\sources\web-app-serve\target\classes started by 860120017 in I:\mySelfProjectBlog\blogs\blogs\sources\web-app-serve)
+2021-09-14 11:39:45.569 INFO  com.zestfulYoghurt.zy.ZyApplication - No active profile set, falling back to default profiles: default
+2021-09-14 11:39:45.625 INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-09-14 11:39:45.626 INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-09-14 11:39:46.399 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'shiroConfiguration' of type [com.zestfulYoghurt.zy.configuration.shiroConfiguration$$EnhancerBySpringCGLIB$$d9d37d47] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-09-14 11:39:46.717 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'mybatis-org.mybatis.spring.boot.autoconfigure.MybatisProperties' of type [org.mybatis.spring.boot.autoconfigure.MybatisProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-09-14 11:39:46.722 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.mybatis.spring.boot.autoconfigure.MybatisAutoConfiguration' of type [org.mybatis.spring.boot.autoconfigure.MybatisAutoConfiguration$$EnhancerBySpringCGLIB$$6139b438] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-09-14 11:39:46.725 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.boot.autoconfigure.jdbc.DataSourceConfiguration$Hikari' of type [org.springframework.boot.autoconfigure.jdbc.DataSourceConfiguration$Hikari] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-09-14 11:39:46.735 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'spring.datasource-org.springframework.boot.autoconfigure.jdbc.DataSourceProperties' of type [org.springframework.boot.autoconfigure.jdbc.DataSourceProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-09-14 11:39:46.755 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'dataSource' of type [com.zaxxer.hikari.HikariDataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-09-14 11:40:09.188 INFO  com.zestfulYoghurt.zy.ZyApplication - Starting ZyApplication on zhangyi with PID 13724 (I:\mySelfProjectBlog\blogs\blogs\sources\web-app-serve\target\classes started by 860120017 in I:\mySelfProjectBlog\blogs\blogs\sources\web-app-serve)
+2021-09-14 11:40:09.189 INFO  com.zestfulYoghurt.zy.ZyApplication - No active profile set, falling back to default profiles: default
+2021-09-14 11:40:09.245 INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-09-14 11:40:09.245 INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-09-14 11:40:09.985 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'shiroConfiguration' of type [com.zestfulYoghurt.zy.configuration.shiroConfiguration$$EnhancerBySpringCGLIB$$d8ba7c08] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-09-14 11:40:10.301 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'mybatis-org.mybatis.spring.boot.autoconfigure.MybatisProperties' of type [org.mybatis.spring.boot.autoconfigure.MybatisProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-09-14 11:40:10.308 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.mybatis.spring.boot.autoconfigure.MybatisAutoConfiguration' of type [org.mybatis.spring.boot.autoconfigure.MybatisAutoConfiguration$$EnhancerBySpringCGLIB$$6020b2f9] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-09-14 11:40:10.310 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.boot.autoconfigure.jdbc.DataSourceConfiguration$Hikari' of type [org.springframework.boot.autoconfigure.jdbc.DataSourceConfiguration$Hikari] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-09-14 11:40:10.319 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'spring.datasource-org.springframework.boot.autoconfigure.jdbc.DataSourceProperties' of type [org.springframework.boot.autoconfigure.jdbc.DataSourceProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-09-14 11:40:10.340 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'dataSource' of type [com.zaxxer.hikari.HikariDataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-09-14 11:40:10.454 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'sqlSessionFactory' of type [org.apache.ibatis.session.defaults.DefaultSqlSessionFactory] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-09-14 11:40:10.460 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'sqlSessionTemplate' of type [org.mybatis.spring.SqlSessionTemplate] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-09-14 11:40:10.461 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'userMapper' of type [org.mybatis.spring.mapper.MapperFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-09-14 11:40:10.463 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'userMapper' of type [com.sun.proxy.$Proxy48] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-09-14 11:40:10.464 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'myShiroRealm' of type [com.zestfulYoghurt.zy.shiro.loginRealm] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-09-14 11:40:10.467 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'securityManager' of type [org.apache.shiro.web.mgt.DefaultWebSecurityManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-09-14 11:40:10.516 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'authorizationAttributeSourceAdvisor' of type [org.apache.shiro.spring.security.interceptor.AuthorizationAttributeSourceAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-09-14 11:40:11.045 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8085 (http)
+2021-09-14 11:40:11.052 INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8085"]
+2021-09-14 11:40:11.053 INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2021-09-14 11:40:11.053 INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.39]
+2021-09-14 11:40:11.213 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2021-09-14 11:40:11.214 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1968 ms
+2021-09-14 11:40:11.822 INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2021-09-14 11:40:12.572 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2021-09-14 11:40:12.613 INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8085"]
+2021-09-14 11:40:12.643 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8085 (http) with context path ''
+2021-09-14 11:40:12.674 INFO  com.zestfulYoghurt.zy.ZyApplication - Started ZyApplication in 3.974 seconds (JVM running for 4.889)
+2021-09-14 11:40:24.315 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-09-14 11:40:24.315 INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2021-09-14 11:40:24.344 INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 29 ms
+2021-09-14 11:40:24.386 INFO  c.z.zy.aop.controllerAOP.controllerAopAround - getBasicInformationOfBlog
+2021-09-14 11:40:24.386 INFO  c.z.zy.aop.controllerAOP.controllerAopAround - com.zestfulYoghurt.zy.controllers.getResources.GetDate@4a67cb52
+2021-09-14 11:40:27.061 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2021-09-14 11:40:27.191 INFO  com.zaxxer.hikari.pool.PoolBase - HikariPool-1 - Driver does not support get/set network timeout for connections. (com.mysql.jdbc.JDBC4Connection.getNetworkTimeout()I)
+2021-09-14 11:40:27.195 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2021-09-14 11:40:28.875 INFO  c.z.zy.aop.controllerAOP.controllerAopAround - 我是aop的后置通知
+2021-09-14 11:40:28.916 INFO  c.z.zy.aop.controllerAOP.controllerAopAround - loginCheckOut
+2021-09-14 11:40:28.916 INFO  c.z.zy.aop.controllerAOP.controllerAopAround - com.zestfulYoghurt.zy.controllers.login.LoginController@d480cb8
+2021-09-14 11:40:28.921 INFO  com.zestfulYoghurt.zy.shiro.loginRealm - 认证
+2021-09-14 11:40:28.921 INFO  com.zestfulYoghurt.zy.shiro.loginRealm - [C@301fc2e2
+2021-09-14 11:40:28.921 INFO  com.zestfulYoghurt.zy.shiro.loginRealm - 123
+2021-09-14 11:40:28.921 INFO  com.zestfulYoghurt.zy.shiro.loginRealm - zhangyi
+2021-09-14 11:40:28.924 INFO  c.z.zy.aop.controllerAOP.controllerAopAround - 我是aop的后置通知
+2021-09-14 11:45:28.205 INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2021-09-14 11:45:28.207 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2021-09-14 11:45:28.218 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2021-09-14 11:45:47.600 INFO  com.zestfulYoghurt.zy.ZyApplication - Starting ZyApplication on zhangyi with PID 9384 (I:\mySelfProjectBlog\blogs\blogs\sources\web-app-serve\target\classes started by 860120017 in I:\mySelfProjectBlog\blogs\blogs\sources\web-app-serve)
+2021-09-14 11:45:47.601 INFO  com.zestfulYoghurt.zy.ZyApplication - No active profile set, falling back to default profiles: default
+2021-09-14 11:45:47.665 INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-09-14 11:45:47.666 INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-09-14 11:45:48.448 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'shiroConfiguration' of type [com.zestfulYoghurt.zy.configuration.shiroConfiguration$$EnhancerBySpringCGLIB$$f02e46a9] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-09-14 11:45:48.769 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'mybatis-org.mybatis.spring.boot.autoconfigure.MybatisProperties' of type [org.mybatis.spring.boot.autoconfigure.MybatisProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-09-14 11:45:48.775 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.mybatis.spring.boot.autoconfigure.MybatisAutoConfiguration' of type [org.mybatis.spring.boot.autoconfigure.MybatisAutoConfiguration$$EnhancerBySpringCGLIB$$77947d9a] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-09-14 11:45:48.777 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.boot.autoconfigure.jdbc.DataSourceConfiguration$Hikari' of type [org.springframework.boot.autoconfigure.jdbc.DataSourceConfiguration$Hikari] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-09-14 11:45:48.788 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'spring.datasource-org.springframework.boot.autoconfigure.jdbc.DataSourceProperties' of type [org.springframework.boot.autoconfigure.jdbc.DataSourceProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-09-14 11:45:48.808 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'dataSource' of type [com.zaxxer.hikari.HikariDataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-09-14 11:45:48.922 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'sqlSessionFactory' of type [org.apache.ibatis.session.defaults.DefaultSqlSessionFactory] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-09-14 11:45:48.929 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'sqlSessionTemplate' of type [org.mybatis.spring.SqlSessionTemplate] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-09-14 11:45:48.930 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'userMapper' of type [org.mybatis.spring.mapper.MapperFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-09-14 11:45:48.931 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'userMapper' of type [com.sun.proxy.$Proxy48] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-09-14 11:45:48.932 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'myShiroRealm' of type [com.zestfulYoghurt.zy.shiro.loginRealm] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-09-14 11:45:48.935 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'securityManager' of type [org.apache.shiro.web.mgt.DefaultWebSecurityManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-09-14 11:45:48.981 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'authorizationAttributeSourceAdvisor' of type [org.apache.shiro.spring.security.interceptor.AuthorizationAttributeSourceAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-09-14 11:45:49.508 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8085 (http)
+2021-09-14 11:45:49.514 INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8085"]
+2021-09-14 11:45:49.515 INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2021-09-14 11:45:49.515 INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.39]
+2021-09-14 11:45:49.688 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2021-09-14 11:45:49.688 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2022 ms
+2021-09-14 11:45:50.285 INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2021-09-14 11:45:50.902 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2021-09-14 11:45:50.924 INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8085"]
+2021-09-14 11:45:50.947 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8085 (http) with context path ''
+2021-09-14 11:45:50.971 INFO  com.zestfulYoghurt.zy.ZyApplication - Started ZyApplication in 3.854 seconds (JVM running for 4.861)
+2021-09-14 11:45:59.527 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-09-14 11:45:59.527 INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2021-09-14 11:45:59.554 INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 27 ms
+2021-09-14 11:45:59.597 INFO  c.z.zy.aop.controllerAOP.controllerAopAround - getBasicInformationOfBlog
+2021-09-14 11:45:59.597 INFO  c.z.zy.aop.controllerAOP.controllerAopAround - com.zestfulYoghurt.zy.controllers.getResources.GetDate@22e83d64
+2021-09-14 11:46:04.136 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2021-09-14 11:46:04.267 INFO  com.zaxxer.hikari.pool.PoolBase - HikariPool-1 - Driver does not support get/set network timeout for connections. (com.mysql.jdbc.JDBC4Connection.getNetworkTimeout()I)
+2021-09-14 11:46:04.272 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2021-09-14 11:46:38.020 INFO  c.z.zy.aop.controllerAOP.controllerAopAround - 我是aop的后置通知
+2021-09-14 11:46:38.191 INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2021-09-14 11:46:38.193 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2021-09-14 11:46:38.208 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2021-09-14 11:51:07.956 INFO  com.zestfulYoghurt.zy.ZyApplication - Starting ZyApplication on zhangyi with PID 15448 (I:\mySelfProjectBlog\blogs\blogs\sources\web-app-serve\target\classes started by 860120017 in I:\mySelfProjectBlog\blogs\blogs\sources\web-app-serve)
+2021-09-14 11:51:07.958 INFO  com.zestfulYoghurt.zy.ZyApplication - No active profile set, falling back to default profiles: default
+2021-09-14 11:51:08.012 INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-09-14 11:51:08.012 INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-09-14 11:51:08.845 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'shiroConfiguration' of type [com.zestfulYoghurt.zy.configuration.shiroConfiguration$$EnhancerBySpringCGLIB$$66eed8c] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-09-14 11:51:09.164 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'mybatis-org.mybatis.spring.boot.autoconfigure.MybatisProperties' of type [org.mybatis.spring.boot.autoconfigure.MybatisProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-09-14 11:51:09.170 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.mybatis.spring.boot.autoconfigure.MybatisAutoConfiguration' of type [org.mybatis.spring.boot.autoconfigure.MybatisAutoConfiguration$$EnhancerBySpringCGLIB$$8dd5247d] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-09-14 11:51:09.172 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.boot.autoconfigure.jdbc.DataSourceConfiguration$Hikari' of type [org.springframework.boot.autoconfigure.jdbc.DataSourceConfiguration$Hikari] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-09-14 11:51:09.183 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'spring.datasource-org.springframework.boot.autoconfigure.jdbc.DataSourceProperties' of type [org.springframework.boot.autoconfigure.jdbc.DataSourceProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-09-14 11:51:09.204 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'dataSource' of type [com.zaxxer.hikari.HikariDataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-09-14 11:51:09.317 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'sqlSessionFactory' of type [org.apache.ibatis.session.defaults.DefaultSqlSessionFactory] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-09-14 11:51:09.321 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'sqlSessionTemplate' of type [org.mybatis.spring.SqlSessionTemplate] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-09-14 11:51:09.322 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'userMapper' of type [org.mybatis.spring.mapper.MapperFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-09-14 11:51:09.323 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'userMapper' of type [com.sun.proxy.$Proxy48] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-09-14 11:51:09.324 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'myShiroRealm' of type [com.zestfulYoghurt.zy.shiro.loginRealm] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-09-14 11:51:09.327 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'securityManager' of type [org.apache.shiro.web.mgt.DefaultWebSecurityManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-09-14 11:51:09.375 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'authorizationAttributeSourceAdvisor' of type [org.apache.shiro.spring.security.interceptor.AuthorizationAttributeSourceAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-09-14 11:51:09.913 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8085 (http)
+2021-09-14 11:51:09.920 INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8085"]
+2021-09-14 11:51:09.921 INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2021-09-14 11:51:09.921 INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.39]
+2021-09-14 11:51:10.116 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2021-09-14 11:51:10.116 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2103 ms
+2021-09-14 11:51:10.761 INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2021-09-14 11:51:11.418 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2021-09-14 11:51:11.442 INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8085"]
+2021-09-14 11:51:11.465 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8085 (http) with context path ''
+2021-09-14 11:51:11.489 INFO  com.zestfulYoghurt.zy.ZyApplication - Started ZyApplication in 4.027 seconds (JVM running for 4.997)
+2021-09-14 11:51:19.054 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-09-14 11:51:19.054 INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2021-09-14 11:51:19.081 INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 27 ms
+2021-09-14 11:51:19.123 INFO  c.z.zy.aop.controllerAOP.controllerAopAround - getBasicInformationOfBlog
+2021-09-14 11:51:19.124 INFO  c.z.zy.aop.controllerAOP.controllerAopAround - com.zestfulYoghurt.zy.controllers.getResources.GetDate@6ee28f04
+2021-09-14 11:51:22.207 INFO  c.z.zy.aop.serviceAOP.ServiceAOPAround - 我是service的前置通知
+2021-09-14 11:51:22.226 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2021-09-14 11:51:22.353 INFO  com.zaxxer.hikari.pool.PoolBase - HikariPool-1 - Driver does not support get/set network timeout for connections. (com.mysql.jdbc.JDBC4Connection.getNetworkTimeout()I)
+2021-09-14 11:51:22.358 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2021-09-14 11:51:22.392 INFO  c.z.zy.aop.serviceAOP.ServiceAOPAround - 我是service的后置通知
+2021-09-14 11:51:23.370 INFO  c.z.zy.aop.controllerAOP.controllerAopAround - 我是aop的后置通知
+2021-09-14 11:51:23.416 INFO  c.z.zy.aop.controllerAOP.controllerAopAround - loginCheckOut
+2021-09-14 11:51:23.416 INFO  c.z.zy.aop.controllerAOP.controllerAopAround - com.zestfulYoghurt.zy.controllers.login.LoginController@61fe701f
+2021-09-14 11:51:23.419 INFO  c.z.zy.aop.serviceAOP.ServiceAOPAround - 我是service的前置通知
+2021-09-14 11:51:23.423 INFO  com.zestfulYoghurt.zy.shiro.loginRealm - 认证
+2021-09-14 11:51:23.423 INFO  com.zestfulYoghurt.zy.shiro.loginRealm - [C@5584a6b5
+2021-09-14 11:51:23.423 INFO  com.zestfulYoghurt.zy.shiro.loginRealm - 123
+2021-09-14 11:51:23.423 INFO  com.zestfulYoghurt.zy.shiro.loginRealm - zhangyi
+2021-09-14 11:51:23.426 INFO  c.z.zy.aop.serviceAOP.ServiceAOPAround - 我是service的后置通知
+2021-09-14 11:51:23.882 INFO  c.z.zy.aop.controllerAOP.controllerAopAround - 我是aop的后置通知
+2021-09-14 11:55:02.440 INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2021-09-14 11:55:02.441 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2021-09-14 11:55:02.448 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2021-09-14 11:55:12.809 INFO  com.zestfulYoghurt.zy.ZyApplication - Starting ZyApplication on zhangyi with PID 9232 (I:\mySelfProjectBlog\blogs\blogs\sources\web-app-serve\target\classes started by 860120017 in I:\mySelfProjectBlog\blogs\blogs\sources\web-app-serve)
+2021-09-14 11:55:12.811 INFO  com.zestfulYoghurt.zy.ZyApplication - No active profile set, falling back to default profiles: default
+2021-09-14 11:55:12.867 INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-09-14 11:55:12.867 INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-09-14 11:55:13.542 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'shiroConfiguration' of type [com.zestfulYoghurt.zy.configuration.shiroConfiguration$$EnhancerBySpringCGLIB$$5e3ae49c] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-09-14 11:55:13.939 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'mybatis-org.mybatis.spring.boot.autoconfigure.MybatisProperties' of type [org.mybatis.spring.boot.autoconfigure.MybatisProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-09-14 11:55:13.945 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.mybatis.spring.boot.autoconfigure.MybatisAutoConfiguration' of type [org.mybatis.spring.boot.autoconfigure.MybatisAutoConfiguration$$EnhancerBySpringCGLIB$$e5a11b8d] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-09-14 11:55:13.947 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.boot.autoconfigure.jdbc.DataSourceConfiguration$Hikari' of type [org.springframework.boot.autoconfigure.jdbc.DataSourceConfiguration$Hikari] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-09-14 11:55:13.954 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'spring.datasource-org.springframework.boot.autoconfigure.jdbc.DataSourceProperties' of type [org.springframework.boot.autoconfigure.jdbc.DataSourceProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-09-14 11:55:13.974 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'dataSource' of type [com.zaxxer.hikari.HikariDataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-09-14 11:55:14.063 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'sqlSessionFactory' of type [org.apache.ibatis.session.defaults.DefaultSqlSessionFactory] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-09-14 11:55:14.067 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'sqlSessionTemplate' of type [org.mybatis.spring.SqlSessionTemplate] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-09-14 11:55:14.068 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'userMapper' of type [org.mybatis.spring.mapper.MapperFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-09-14 11:55:14.068 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'userMapper' of type [com.sun.proxy.$Proxy48] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-09-14 11:55:14.069 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'myShiroRealm' of type [com.zestfulYoghurt.zy.shiro.loginRealm] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-09-14 11:55:14.071 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'securityManager' of type [org.apache.shiro.web.mgt.DefaultWebSecurityManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-09-14 11:55:14.105 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'authorizationAttributeSourceAdvisor' of type [org.apache.shiro.spring.security.interceptor.AuthorizationAttributeSourceAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-09-14 11:55:14.544 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8085 (http)
+2021-09-14 11:55:14.551 INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8085"]
+2021-09-14 11:55:14.552 INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2021-09-14 11:55:14.552 INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.39]
+2021-09-14 11:55:14.640 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2021-09-14 11:55:14.640 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1772 ms
+2021-09-14 11:55:15.174 INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2021-09-14 11:55:15.662 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2021-09-14 11:55:15.682 INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8085"]
+2021-09-14 11:55:15.698 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8085 (http) with context path ''
+2021-09-14 11:55:15.718 INFO  com.zestfulYoghurt.zy.ZyApplication - Started ZyApplication in 3.315 seconds (JVM running for 4.131)
+2021-09-14 11:55:20.747 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-09-14 11:55:20.747 INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2021-09-14 11:55:20.766 INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 19 ms
+2021-09-14 11:55:20.795 INFO  c.z.zy.aop.controllerAOP.controllerAopAround - getBasicInformationOfBlog
+2021-09-14 11:55:20.795 INFO  c.z.zy.aop.controllerAOP.controllerAopAround - com.zestfulYoghurt.zy.controllers.getResources.GetDate@fab2d30
+2021-09-14 11:55:20.799 INFO  c.z.zy.aop.serviceAOP.ServiceAOPAround - com.zestfulYoghurt.zy.services.baseService.blogService.BlogServiceImp@7d65960cgetBlogstart
+2021-09-14 11:55:20.799 INFO  c.z.zy.aop.serviceAOP.ServiceAOPAround - com.zestfulYoghurt.zy.services.baseService.blogService.BlogServiceImp@7d65960c
+2021-09-14 11:55:20.818 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2021-09-14 11:55:20.938 INFO  com.zaxxer.hikari.pool.PoolBase - HikariPool-1 - Driver does not support get/set network timeout for connections. (com.mysql.jdbc.JDBC4Connection.getNetworkTimeout()I)
+2021-09-14 11:55:20.942 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2021-09-14 11:55:20.977 INFO  c.z.zy.aop.serviceAOP.ServiceAOPAround - com.zestfulYoghurt.zy.services.baseService.blogService.BlogServiceImp@7d65960cgetBlogend
+2021-09-14 11:55:21.025 INFO  c.z.zy.aop.controllerAOP.controllerAopAround - loginCheckOut
+2021-09-14 11:55:21.025 INFO  c.z.zy.aop.controllerAOP.controllerAopAround - com.zestfulYoghurt.zy.controllers.login.LoginController@4d4edf32
+2021-09-14 11:55:21.027 INFO  c.z.zy.aop.serviceAOP.ServiceAOPAround - com.zestfulYoghurt.zy.services.loginService.LoginServiceImp@3561e1c4loginCheckOutstart
+2021-09-14 11:55:21.027 INFO  c.z.zy.aop.serviceAOP.ServiceAOPAround - com.zestfulYoghurt.zy.services.loginService.LoginServiceImp@3561e1c4
+2021-09-14 11:55:21.031 INFO  com.zestfulYoghurt.zy.shiro.loginRealm - 认证
+2021-09-14 11:55:21.031 INFO  com.zestfulYoghurt.zy.shiro.loginRealm - [C@2b39b71e
+2021-09-14 11:55:21.031 INFO  com.zestfulYoghurt.zy.shiro.loginRealm - 123
+2021-09-14 11:55:21.031 INFO  com.zestfulYoghurt.zy.shiro.loginRealm - zhangyi
+2021-09-14 11:55:21.034 INFO  c.z.zy.aop.serviceAOP.ServiceAOPAround - com.zestfulYoghurt.zy.services.loginService.LoginServiceImp@3561e1c4loginCheckOutend
+2021-09-14 11:56:19.264 INFO  com.zestfulYoghurt.zy.ZyApplication - Starting ZyApplication on zhangyi with PID 10840 (I:\mySelfProjectBlog\blogs\blogs\sources\web-app-serve\target\classes started by 860120017 in I:\mySelfProjectBlog\blogs\blogs\sources\web-app-serve)
+2021-09-14 11:56:19.265 INFO  com.zestfulYoghurt.zy.ZyApplication - No active profile set, falling back to default profiles: default
+2021-09-14 11:56:19.323 INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-09-14 11:56:19.323 INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-09-14 11:56:20.074 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'shiroConfiguration' of type [com.zestfulYoghurt.zy.configuration.shiroConfiguration$$EnhancerBySpringCGLIB$$7fc34408] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-09-14 11:56:20.398 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'mybatis-org.mybatis.spring.boot.autoconfigure.MybatisProperties' of type [org.mybatis.spring.boot.autoconfigure.MybatisProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-09-14 11:56:20.405 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.mybatis.spring.boot.autoconfigure.MybatisAutoConfiguration' of type [org.mybatis.spring.boot.autoconfigure.MybatisAutoConfiguration$$EnhancerBySpringCGLIB$$7297af9] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-09-14 11:56:20.407 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.boot.autoconfigure.jdbc.DataSourceConfiguration$Hikari' of type [org.springframework.boot.autoconfigure.jdbc.DataSourceConfiguration$Hikari] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-09-14 11:56:20.418 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'spring.datasource-org.springframework.boot.autoconfigure.jdbc.DataSourceProperties' of type [org.springframework.boot.autoconfigure.jdbc.DataSourceProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-09-14 11:56:20.441 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'dataSource' of type [com.zaxxer.hikari.HikariDataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-09-14 11:56:20.567 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'sqlSessionFactory' of type [org.apache.ibatis.session.defaults.DefaultSqlSessionFactory] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-09-14 11:56:20.573 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'sqlSessionTemplate' of type [org.mybatis.spring.SqlSessionTemplate] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-09-14 11:56:20.573 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'userMapper' of type [org.mybatis.spring.mapper.MapperFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-09-14 11:56:20.575 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'userMapper' of type [com.sun.proxy.$Proxy48] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-09-14 11:56:20.577 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'myShiroRealm' of type [com.zestfulYoghurt.zy.shiro.loginRealm] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-09-14 11:56:20.580 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'securityManager' of type [org.apache.shiro.web.mgt.DefaultWebSecurityManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-09-14 11:56:20.648 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'authorizationAttributeSourceAdvisor' of type [org.apache.shiro.spring.security.interceptor.AuthorizationAttributeSourceAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-09-14 11:56:21.195 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8085 (http)
+2021-09-14 11:56:21.202 INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8085"]
+2021-09-14 11:56:21.203 INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2021-09-14 11:56:21.203 INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.39]
+2021-09-14 11:56:21.313 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2021-09-14 11:56:21.313 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1989 ms
+2021-09-14 11:56:22.039 INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2021-09-14 11:56:22.694 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2021-09-14 11:56:22.723 INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8085"]
+2021-09-14 11:56:22.747 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8085 (http) with context path ''
+2021-09-14 11:56:22.775 INFO  com.zestfulYoghurt.zy.ZyApplication - Started ZyApplication in 4.045 seconds (JVM running for 5.126)
+2021-09-14 11:56:33.809 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-09-14 11:56:33.809 INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2021-09-14 11:56:33.834 INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 25 ms
+2021-09-14 11:56:33.876 INFO  c.z.zy.aop.controllerAOP.controllerAopAround - getBasicInformationOfBlog
+2021-09-14 11:56:33.876 INFO  c.z.zy.aop.controllerAOP.controllerAopAround - com.zestfulYoghurt.zy.controllers.getResources.GetDate@39a3bcfe
+2021-09-14 11:56:38.473 INFO  c.z.zy.aop.serviceAOP.ServiceAOPAround - com.zestfulYoghurt.zy.services.baseService.blogService.BlogServiceImp@19e301cegetBlog====start
+2021-09-14 11:56:38.473 INFO  c.z.zy.aop.serviceAOP.ServiceAOPAround - com.zestfulYoghurt.zy.services.baseService.blogService.BlogServiceImp@19e301ce
+2021-09-14 11:56:38.493 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2021-09-14 11:56:38.619 INFO  com.zaxxer.hikari.pool.PoolBase - HikariPool-1 - Driver does not support get/set network timeout for connections. (com.mysql.jdbc.JDBC4Connection.getNetworkTimeout()I)
+2021-09-14 11:56:38.623 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2021-09-14 11:56:38.660 INFO  c.z.zy.aop.serviceAOP.ServiceAOPAround - com.zestfulYoghurt.zy.services.baseService.blogService.BlogServiceImp@19e301cegetBlog====end
+2021-09-14 11:56:38.704 INFO  c.z.zy.aop.controllerAOP.controllerAopAround - loginCheckOut
+2021-09-14 11:56:38.704 INFO  c.z.zy.aop.controllerAOP.controllerAopAround - com.zestfulYoghurt.zy.controllers.login.LoginController@6bd959e2
+2021-09-14 11:56:38.708 INFO  c.z.zy.aop.serviceAOP.ServiceAOPAround - com.zestfulYoghurt.zy.services.loginService.LoginServiceImp@69791601loginCheckOut====start
+2021-09-14 11:56:38.708 INFO  c.z.zy.aop.serviceAOP.ServiceAOPAround - com.zestfulYoghurt.zy.services.loginService.LoginServiceImp@69791601
+2021-09-14 11:56:38.712 INFO  com.zestfulYoghurt.zy.shiro.loginRealm - 认证
+2021-09-14 11:56:38.713 INFO  com.zestfulYoghurt.zy.shiro.loginRealm - [C@3d002ca4
+2021-09-14 11:56:38.713 INFO  com.zestfulYoghurt.zy.shiro.loginRealm - 123
+2021-09-14 11:56:38.713 INFO  com.zestfulYoghurt.zy.shiro.loginRealm - zhangyi
+2021-09-14 11:56:38.717 INFO  c.z.zy.aop.serviceAOP.ServiceAOPAround - com.zestfulYoghurt.zy.services.loginService.LoginServiceImp@69791601loginCheckOut====end
+2021-09-14 11:58:18.532 INFO  c.z.zy.aop.controllerAOP.controllerAopAround - getBasicInformationOfBlog
+2021-09-14 11:58:18.532 INFO  c.z.zy.aop.controllerAOP.controllerAopAround - com.zestfulYoghurt.zy.controllers.getResources.GetDate@39a3bcfe
+2021-09-14 11:58:18.532 INFO  c.z.zy.aop.serviceAOP.ServiceAOPAround - com.zestfulYoghurt.zy.services.baseService.blogService.BlogServiceImp@19e301cegetBlog====start
+2021-09-14 11:58:18.532 INFO  c.z.zy.aop.serviceAOP.ServiceAOPAround - com.zestfulYoghurt.zy.services.baseService.blogService.BlogServiceImp@19e301ce
+2021-09-14 11:58:18.535 INFO  c.z.zy.aop.serviceAOP.ServiceAOPAround - com.zestfulYoghurt.zy.services.baseService.blogService.BlogServiceImp@19e301cegetBlog====end
+2021-09-14 11:58:18.552 INFO  c.z.zy.aop.controllerAOP.controllerAopAround - loginCheckOut
+2021-09-14 11:58:18.552 INFO  c.z.zy.aop.controllerAOP.controllerAopAround - com.zestfulYoghurt.zy.controllers.login.LoginController@6bd959e2
+2021-09-14 11:58:18.552 INFO  c.z.zy.aop.serviceAOP.ServiceAOPAround - com.zestfulYoghurt.zy.services.loginService.LoginServiceImp@69791601loginCheckOut====start
+2021-09-14 11:58:18.552 INFO  c.z.zy.aop.serviceAOP.ServiceAOPAround - com.zestfulYoghurt.zy.services.loginService.LoginServiceImp@69791601
+2021-09-14 11:58:18.552 INFO  com.zestfulYoghurt.zy.shiro.loginRealm - 认证
+2021-09-14 11:58:18.552 INFO  com.zestfulYoghurt.zy.shiro.loginRealm - [C@1c0705d7
+2021-09-14 11:58:18.552 INFO  com.zestfulYoghurt.zy.shiro.loginRealm - 123
+2021-09-14 11:58:18.552 INFO  com.zestfulYoghurt.zy.shiro.loginRealm - zhangyi
+2021-09-14 11:58:18.553 INFO  c.z.zy.aop.serviceAOP.ServiceAOPAround - com.zestfulYoghurt.zy.services.loginService.LoginServiceImp@69791601loginCheckOut====end
+2021-09-14 11:59:39.706 INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2021-09-14 11:59:39.707 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2021-09-14 11:59:39.712 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2021-09-14 11:59:51.571 INFO  com.zestfulYoghurt.zy.ZyApplication - Starting ZyApplication on zhangyi with PID 17032 (I:\mySelfProjectBlog\blogs\blogs\sources\web-app-serve\target\classes started by 860120017 in I:\mySelfProjectBlog\blogs\blogs\sources\web-app-serve)
+2021-09-14 11:59:51.572 INFO  com.zestfulYoghurt.zy.ZyApplication - No active profile set, falling back to default profiles: default
+2021-09-14 11:59:51.631 INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-09-14 11:59:51.632 INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-09-14 11:59:52.656 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'shiroConfiguration' of type [com.zestfulYoghurt.zy.configuration.shiroConfiguration$$EnhancerBySpringCGLIB$$ca36f8c] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-09-14 11:59:53.074 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'mybatis-org.mybatis.spring.boot.autoconfigure.MybatisProperties' of type [org.mybatis.spring.boot.autoconfigure.MybatisProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-09-14 11:59:53.082 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.mybatis.spring.boot.autoconfigure.MybatisAutoConfiguration' of type [org.mybatis.spring.boot.autoconfigure.MybatisAutoConfiguration$$EnhancerBySpringCGLIB$$9409a67d] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-09-14 11:59:53.084 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.boot.autoconfigure.jdbc.DataSourceConfiguration$Hikari' of type [org.springframework.boot.autoconfigure.jdbc.DataSourceConfiguration$Hikari] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-09-14 11:59:53.095 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'spring.datasource-org.springframework.boot.autoconfigure.jdbc.DataSourceProperties' of type [org.springframework.boot.autoconfigure.jdbc.DataSourceProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-09-14 11:59:53.120 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'dataSource' of type [com.zaxxer.hikari.HikariDataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-09-14 11:59:53.241 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'sqlSessionFactory' of type [org.apache.ibatis.session.defaults.DefaultSqlSessionFactory] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-09-14 11:59:53.249 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'sqlSessionTemplate' of type [org.mybatis.spring.SqlSessionTemplate] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-09-14 11:59:53.250 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'userMapper' of type [org.mybatis.spring.mapper.MapperFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-09-14 11:59:53.252 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'userMapper' of type [com.sun.proxy.$Proxy48] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-09-14 11:59:53.253 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'myShiroRealm' of type [com.zestfulYoghurt.zy.shiro.loginRealm] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-09-14 11:59:53.255 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'securityManager' of type [org.apache.shiro.web.mgt.DefaultWebSecurityManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-09-14 11:59:53.305 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'authorizationAttributeSourceAdvisor' of type [org.apache.shiro.spring.security.interceptor.AuthorizationAttributeSourceAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-09-14 11:59:53.912 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8085 (http)
+2021-09-14 11:59:53.922 INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8085"]
+2021-09-14 11:59:53.923 INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2021-09-14 11:59:53.923 INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.39]
+2021-09-14 11:59:54.049 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2021-09-14 11:59:54.050 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2418 ms
+2021-09-14 11:59:54.853 INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2021-09-14 11:59:55.504 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2021-09-14 11:59:55.666 INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8085"]
+2021-09-14 11:59:55.690 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8085 (http) with context path ''
+2021-09-14 11:59:55.713 INFO  com.zestfulYoghurt.zy.ZyApplication - Started ZyApplication in 4.686 seconds (JVM running for 5.844)
+2021-09-14 12:00:02.441 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-09-14 12:00:02.441 INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2021-09-14 12:00:02.470 INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 29 ms
+2021-09-14 12:00:02.512 INFO  c.z.zy.aop.controllerAOP.controllerAopAround - getBasicInformationOfBlog
+2021-09-14 12:00:02.512 INFO  c.z.zy.aop.controllerAOP.controllerAopAround - com.zestfulYoghurt.zy.controllers.getResources.GetDate@436d3b26
+2021-09-14 12:00:02.516 INFO  c.z.zy.aop.serviceAOP.ServiceAOPAround - com.zestfulYoghurt.zy.services.baseService.blogService.BlogServiceImp@2f5dba58getBlog====start
+2021-09-14 12:00:02.541 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2021-09-14 12:00:02.677 INFO  com.zaxxer.hikari.pool.PoolBase - HikariPool-1 - Driver does not support get/set network timeout for connections. (com.mysql.jdbc.JDBC4Connection.getNetworkTimeout()I)
+2021-09-14 12:00:02.681 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2021-09-14 12:00:02.722 INFO  c.z.zy.aop.serviceAOP.ServiceAOPAround - com.zestfulYoghurt.zy.services.baseService.blogService.BlogServiceImp@2f5dba58getBlog====end
+2021-09-14 12:00:57.034 INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2021-09-14 12:00:57.035 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2021-09-14 12:00:57.043 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2021-09-14 17:13:28.991 INFO  com.zestfulYoghurt.zy.ZyApplication - Starting ZyApplication on zhangyi with PID 1856 (I:\mySelfProjectBlog\blogs\blogs\sources\web-app-serve\target\classes started by 860120017 in I:\mySelfProjectBlog\blogs\blogs\sources\web-app-serve)
+2021-09-14 17:13:28.993 INFO  com.zestfulYoghurt.zy.ZyApplication - No active profile set, falling back to default profiles: default
+2021-09-14 17:13:29.047 INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-09-14 17:13:29.047 INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-09-14 17:13:29.853 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'shiroConfiguration' of type [com.zestfulYoghurt.zy.configuration.shiroConfiguration$$EnhancerBySpringCGLIB$$426aa0cb] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-09-14 17:13:30.205 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'mybatis-org.mybatis.spring.boot.autoconfigure.MybatisProperties' of type [org.mybatis.spring.boot.autoconfigure.MybatisProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-09-14 17:13:30.213 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.mybatis.spring.boot.autoconfigure.MybatisAutoConfiguration' of type [org.mybatis.spring.boot.autoconfigure.MybatisAutoConfiguration$$EnhancerBySpringCGLIB$$c9d0d7bc] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-09-14 17:13:30.215 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.boot.autoconfigure.jdbc.DataSourceConfiguration$Hikari' of type [org.springframework.boot.autoconfigure.jdbc.DataSourceConfiguration$Hikari] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-09-14 17:13:30.224 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'spring.datasource-org.springframework.boot.autoconfigure.jdbc.DataSourceProperties' of type [org.springframework.boot.autoconfigure.jdbc.DataSourceProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-09-14 17:13:30.247 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'dataSource' of type [com.zaxxer.hikari.HikariDataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-09-14 17:13:30.389 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'sqlSessionFactory' of type [org.apache.ibatis.session.defaults.DefaultSqlSessionFactory] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-09-14 17:13:30.394 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'sqlSessionTemplate' of type [org.mybatis.spring.SqlSessionTemplate] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-09-14 17:13:30.395 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'userMapper' of type [org.mybatis.spring.mapper.MapperFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-09-14 17:13:30.397 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'userMapper' of type [com.sun.proxy.$Proxy48] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-09-14 17:13:30.398 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'myShiroRealm' of type [com.zestfulYoghurt.zy.shiro.loginRealm] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-09-14 17:13:30.401 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'securityManager' of type [org.apache.shiro.web.mgt.DefaultWebSecurityManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-09-14 17:13:30.453 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'authorizationAttributeSourceAdvisor' of type [org.apache.shiro.spring.security.interceptor.AuthorizationAttributeSourceAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-09-14 17:13:31.034 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8085 (http)
+2021-09-14 17:13:31.045 INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8085"]
+2021-09-14 17:13:31.046 INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2021-09-14 17:13:31.046 INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.39]
+2021-09-14 17:13:31.161 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2021-09-14 17:13:31.161 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2113 ms
+2021-09-14 17:13:31.955 INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2021-09-14 17:13:32.653 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2021-09-14 17:13:32.675 INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8085"]
+2021-09-14 17:13:32.696 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8085 (http) with context path ''
+2021-09-14 17:13:32.722 INFO  com.zestfulYoghurt.zy.ZyApplication - Started ZyApplication in 4.218 seconds (JVM running for 5.979)
+2021-09-14 17:13:50.508 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-09-14 17:13:50.509 INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2021-09-14 17:13:50.539 INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 30 ms
+2021-09-14 17:13:50.576 INFO  c.z.zy.aop.controllerAOP.controllerAopAround - getBasicInformationOfBlog
+2021-09-14 17:13:50.576 INFO  c.z.zy.aop.controllerAOP.controllerAopAround - com.zestfulYoghurt.zy.controllers.getResources.GetDate@1575e714
+2021-09-14 17:13:50.579 INFO  c.z.zy.aop.serviceAOP.ServiceAOPAround - com.zestfulYoghurt.zy.services.baseService.blogService.BlogServiceImp@31ce4e50getBlog====start
+2021-09-14 17:15:23.733 INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2021-09-14 17:15:30.376 INFO  com.zestfulYoghurt.zy.ZyApplication - Starting ZyApplication on zhangyi with PID 10948 (I:\mySelfProjectBlog\blogs\blogs\sources\web-app-serve\target\classes started by 860120017 in I:\mySelfProjectBlog\blogs\blogs\sources\web-app-serve)
+2021-09-14 17:15:30.377 INFO  com.zestfulYoghurt.zy.ZyApplication - No active profile set, falling back to default profiles: default
+2021-09-14 17:15:30.437 INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-09-14 17:15:30.437 INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-09-14 17:15:31.244 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'shiroConfiguration' of type [com.zestfulYoghurt.zy.configuration.shiroConfiguration$$EnhancerBySpringCGLIB$$ebddeab8] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-09-14 17:15:31.609 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'mybatis-org.mybatis.spring.boot.autoconfigure.MybatisProperties' of type [org.mybatis.spring.boot.autoconfigure.MybatisProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-09-14 17:15:31.615 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.mybatis.spring.boot.autoconfigure.MybatisAutoConfiguration' of type [org.mybatis.spring.boot.autoconfigure.MybatisAutoConfiguration$$EnhancerBySpringCGLIB$$734421a9] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-09-14 17:15:31.617 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.boot.autoconfigure.jdbc.DataSourceConfiguration$Hikari' of type [org.springframework.boot.autoconfigure.jdbc.DataSourceConfiguration$Hikari] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-09-14 17:15:31.628 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'spring.datasource-org.springframework.boot.autoconfigure.jdbc.DataSourceProperties' of type [org.springframework.boot.autoconfigure.jdbc.DataSourceProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-09-14 17:15:31.651 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'dataSource' of type [com.zaxxer.hikari.HikariDataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-09-14 17:15:31.775 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'sqlSessionFactory' of type [org.apache.ibatis.session.defaults.DefaultSqlSessionFactory] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-09-14 17:15:31.780 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'sqlSessionTemplate' of type [org.mybatis.spring.SqlSessionTemplate] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-09-14 17:15:31.781 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'userMapper' of type [org.mybatis.spring.mapper.MapperFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-09-14 17:15:31.783 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'userMapper' of type [com.sun.proxy.$Proxy48] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-09-14 17:15:31.783 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'myShiroRealm' of type [com.zestfulYoghurt.zy.shiro.loginRealm] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-09-14 17:15:31.787 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'securityManager' of type [org.apache.shiro.web.mgt.DefaultWebSecurityManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-09-14 17:15:31.841 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'authorizationAttributeSourceAdvisor' of type [org.apache.shiro.spring.security.interceptor.AuthorizationAttributeSourceAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-09-14 17:15:32.413 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8085 (http)
+2021-09-14 17:15:32.422 INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8085"]
+2021-09-14 17:15:32.423 INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2021-09-14 17:15:32.423 INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.39]
+2021-09-14 17:15:32.531 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2021-09-14 17:15:32.532 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2095 ms
+2021-09-14 17:15:33.262 INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2021-09-14 17:15:33.956 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2021-09-14 17:15:33.982 INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8085"]
+2021-09-14 17:15:34.006 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8085 (http) with context path ''
+2021-09-14 17:15:34.033 INFO  com.zestfulYoghurt.zy.ZyApplication - Started ZyApplication in 4.185 seconds (JVM running for 5.16)
+2021-09-14 17:15:42.272 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-09-14 17:15:42.272 INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2021-09-14 17:15:42.299 INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 27 ms
+2021-09-14 17:15:42.342 INFO  c.z.zy.aop.controllerAOP.controllerAopAround - getBasicInformationOfBlog
+2021-09-14 17:15:42.342 INFO  c.z.zy.aop.controllerAOP.controllerAopAround - com.zestfulYoghurt.zy.controllers.getResources.GetDate@10a46f53
+2021-09-14 17:15:42.349 INFO  c.z.zy.aop.serviceAOP.ServiceAOPAround - com.zestfulYoghurt.zy.services.baseService.blogService.BlogServiceImp@456d9794getBlog====start
+2021-09-14 17:15:42.399 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2021-09-14 17:15:42.539 INFO  com.zaxxer.hikari.pool.PoolBase - HikariPool-1 - Driver does not support get/set network timeout for connections. (com.mysql.jdbc.JDBC4Connection.getNetworkTimeout()I)
+2021-09-14 17:15:42.545 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2021-09-14 17:15:42.714 INFO  c.z.zy.aop.controllerAOP.controllerAopAround - loginCheckOut
+2021-09-14 17:15:42.714 INFO  c.z.zy.aop.controllerAOP.controllerAopAround - com.zestfulYoghurt.zy.controllers.login.LoginController@47b0e7f
+2021-09-14 17:15:42.717 INFO  c.z.zy.aop.serviceAOP.ServiceAOPAround - com.zestfulYoghurt.zy.services.loginService.LoginServiceImp@637d7ffdloginCheckOut====start
+2021-09-14 17:15:42.721 INFO  com.zestfulYoghurt.zy.shiro.loginRealm - 认证
+2021-09-14 17:15:42.721 INFO  com.zestfulYoghurt.zy.shiro.loginRealm - [C@4204c972
+2021-09-14 17:15:42.721 INFO  com.zestfulYoghurt.zy.shiro.loginRealm - 123
+2021-09-14 17:15:42.721 INFO  com.zestfulYoghurt.zy.shiro.loginRealm - zhangyi
+2021-09-14 17:15:42.726 INFO  c.z.zy.aop.serviceAOP.ServiceAOPAround - com.zestfulYoghurt.zy.services.loginService.LoginServiceImp@637d7ffdloginCheckOut====end
+2021-09-14 17:26:25.400 INFO  c.z.zy.aop.controllerAOP.controllerAopAround - getBasicInformationOfBlog
+2021-09-14 17:26:25.400 INFO  c.z.zy.aop.controllerAOP.controllerAopAround - com.zestfulYoghurt.zy.controllers.getResources.GetDate@10a46f53
+2021-09-14 17:26:25.401 INFO  c.z.zy.aop.serviceAOP.ServiceAOPAround - com.zestfulYoghurt.zy.services.baseService.blogService.BlogServiceImp@456d9794getBlog====start
+2021-09-14 17:26:25.409 INFO  c.z.zy.aop.serviceAOP.ServiceAOPAround - com.zestfulYoghurt.zy.services.baseService.blogService.BlogServiceImp@456d9794getBlog====end
+2021-09-14 17:26:30.598 INFO  c.z.zy.aop.controllerAOP.controllerAopAround - loginCheckOut
+2021-09-14 17:26:30.598 INFO  c.z.zy.aop.controllerAOP.controllerAopAround - com.zestfulYoghurt.zy.controllers.login.LoginController@47b0e7f
+2021-09-14 17:26:30.598 INFO  c.z.zy.aop.serviceAOP.ServiceAOPAround - com.zestfulYoghurt.zy.services.loginService.LoginServiceImp@637d7ffdloginCheckOut====start
+2021-09-14 17:26:30.598 INFO  com.zestfulYoghurt.zy.shiro.loginRealm - 认证
+2021-09-14 17:26:30.598 INFO  com.zestfulYoghurt.zy.shiro.loginRealm - [C@5a88968e
+2021-09-14 17:26:30.598 INFO  com.zestfulYoghurt.zy.shiro.loginRealm - 123
+2021-09-14 17:26:30.598 INFO  com.zestfulYoghurt.zy.shiro.loginRealm - zhangyi
+2021-09-14 17:26:30.598 INFO  c.z.zy.aop.serviceAOP.ServiceAOPAround - com.zestfulYoghurt.zy.services.loginService.LoginServiceImp@637d7ffdloginCheckOut====end
+2021-09-14 17:32:56.143 INFO  c.z.zy.aop.controllerAOP.controllerAopAround - getBasicInformationOfBlog
+2021-09-14 17:32:56.143 INFO  c.z.zy.aop.controllerAOP.controllerAopAround - com.zestfulYoghurt.zy.controllers.getResources.GetDate@10a46f53
+2021-09-14 17:32:56.143 INFO  c.z.zy.aop.serviceAOP.ServiceAOPAround - com.zestfulYoghurt.zy.services.baseService.blogService.BlogServiceImp@456d9794getBlog====start
+2021-09-14 17:32:56.146 INFO  c.z.zy.aop.serviceAOP.ServiceAOPAround - com.zestfulYoghurt.zy.services.baseService.blogService.BlogServiceImp@456d9794getBlog====end
+2021-09-14 17:32:56.162 INFO  c.z.zy.aop.controllerAOP.controllerAopAround - loginCheckOut
+2021-09-14 17:32:56.162 INFO  c.z.zy.aop.controllerAOP.controllerAopAround - com.zestfulYoghurt.zy.controllers.login.LoginController@47b0e7f
+2021-09-14 17:32:56.162 INFO  c.z.zy.aop.serviceAOP.ServiceAOPAround - com.zestfulYoghurt.zy.services.loginService.LoginServiceImp@637d7ffdloginCheckOut====start
+2021-09-14 17:32:56.162 INFO  com.zestfulYoghurt.zy.shiro.loginRealm - 认证
+2021-09-14 17:32:56.162 INFO  com.zestfulYoghurt.zy.shiro.loginRealm - [C@2b632b4d
+2021-09-14 17:32:56.162 INFO  com.zestfulYoghurt.zy.shiro.loginRealm - 123
+2021-09-14 17:33:12.358 INFO  com.zestfulYoghurt.zy.shiro.loginRealm - zhangyi
+2021-09-14 17:33:45.979 INFO  c.z.zy.aop.serviceAOP.ServiceAOPAround - com.zestfulYoghurt.zy.services.loginService.LoginServiceImp@637d7ffdloginCheckOut====end
+2021-09-14 17:33:56.992 INFO  c.z.zy.aop.controllerAOP.controllerAopAround - getBasicInformationOfBlog
+2021-09-14 17:33:56.993 INFO  c.z.zy.aop.controllerAOP.controllerAopAround - com.zestfulYoghurt.zy.controllers.getResources.GetDate@10a46f53
+2021-09-14 17:33:56.993 INFO  c.z.zy.aop.serviceAOP.ServiceAOPAround - com.zestfulYoghurt.zy.services.baseService.blogService.BlogServiceImp@456d9794getBlog====start
+2021-09-14 17:33:56.995 INFO  c.z.zy.aop.serviceAOP.ServiceAOPAround - com.zestfulYoghurt.zy.services.baseService.blogService.BlogServiceImp@456d9794getBlog====end
+2021-09-14 17:33:57.013 INFO  c.z.zy.aop.controllerAOP.controllerAopAround - loginCheckOut
+2021-09-14 17:33:57.013 INFO  c.z.zy.aop.controllerAOP.controllerAopAround - com.zestfulYoghurt.zy.controllers.login.LoginController@47b0e7f
+2021-09-14 17:33:57.013 INFO  c.z.zy.aop.serviceAOP.ServiceAOPAround - com.zestfulYoghurt.zy.services.loginService.LoginServiceImp@637d7ffdloginCheckOut====start
+2021-09-14 17:33:57.013 INFO  com.zestfulYoghurt.zy.shiro.loginRealm - 认证
+2021-09-14 17:33:57.013 INFO  com.zestfulYoghurt.zy.shiro.loginRealm - [C@690fe08b
+2021-09-14 17:33:57.013 INFO  com.zestfulYoghurt.zy.shiro.loginRealm - 123
+2021-09-14 17:34:06.312 INFO  com.zestfulYoghurt.zy.shiro.loginRealm - zhangyi
+2021-09-14 17:34:26.248 INFO  c.z.zy.aop.serviceAOP.ServiceAOPAround - com.zestfulYoghurt.zy.services.loginService.LoginServiceImp@637d7ffdloginCheckOut====end
+2021-09-14 17:35:18.288 INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2021-09-14 17:35:18.289 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2021-09-14 17:35:18.298 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2021-09-14 17:35:35.267 INFO  com.zestfulYoghurt.zy.ZyApplication - Starting ZyApplication on zhangyi with PID 14116 (I:\mySelfProjectBlog\blogs\blogs\sources\web-app-serve\target\classes started by 860120017 in I:\mySelfProjectBlog\blogs\blogs\sources\web-app-serve)
+2021-09-14 17:35:35.268 INFO  com.zestfulYoghurt.zy.ZyApplication - No active profile set, falling back to default profiles: default
+2021-09-14 17:35:35.326 INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-09-14 17:35:35.326 INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-09-14 17:35:36.104 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'shiroConfiguration' of type [com.zestfulYoghurt.zy.configuration.shiroConfiguration$$EnhancerBySpringCGLIB$$4ec2a54f] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-09-14 17:35:36.453 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'mybatis-org.mybatis.spring.boot.autoconfigure.MybatisProperties' of type [org.mybatis.spring.boot.autoconfigure.MybatisProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-09-14 17:35:36.458 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.mybatis.spring.boot.autoconfigure.MybatisAutoConfiguration' of type [org.mybatis.spring.boot.autoconfigure.MybatisAutoConfiguration$$EnhancerBySpringCGLIB$$d628dc40] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-09-14 17:35:36.461 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.boot.autoconfigure.jdbc.DataSourceConfiguration$Hikari' of type [org.springframework.boot.autoconfigure.jdbc.DataSourceConfiguration$Hikari] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-09-14 17:35:36.472 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'spring.datasource-org.springframework.boot.autoconfigure.jdbc.DataSourceProperties' of type [org.springframework.boot.autoconfigure.jdbc.DataSourceProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-09-14 17:35:36.491 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'dataSource' of type [com.zaxxer.hikari.HikariDataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-09-14 17:35:36.607 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'sqlSessionFactory' of type [org.apache.ibatis.session.defaults.DefaultSqlSessionFactory] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-09-14 17:35:36.613 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'sqlSessionTemplate' of type [org.mybatis.spring.SqlSessionTemplate] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-09-14 17:35:36.614 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'userMapper' of type [org.mybatis.spring.mapper.MapperFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-09-14 17:35:36.615 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'userMapper' of type [com.sun.proxy.$Proxy48] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-09-14 17:35:36.616 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'myShiroRealm' of type [com.zestfulYoghurt.zy.shiro.loginRealm] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-09-14 17:35:36.618 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'securityManager' of type [org.apache.shiro.web.mgt.DefaultWebSecurityManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-09-14 17:35:36.670 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'authorizationAttributeSourceAdvisor' of type [org.apache.shiro.spring.security.interceptor.AuthorizationAttributeSourceAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-09-14 17:35:37.244 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8085 (http)
+2021-09-14 17:35:37.254 INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8085"]
+2021-09-14 17:35:37.255 INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2021-09-14 17:35:37.255 INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.39]
+2021-09-14 17:35:37.451 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2021-09-14 17:35:37.451 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2124 ms
+2021-09-14 17:35:38.090 INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2021-09-14 17:35:38.768 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2021-09-14 17:35:38.791 INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8085"]
+2021-09-14 17:35:38.817 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8085 (http) with context path ''
+2021-09-14 17:35:38.842 INFO  com.zestfulYoghurt.zy.ZyApplication - Started ZyApplication in 4.069 seconds (JVM running for 5.04)
+2021-09-14 17:35:43.554 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-09-14 17:35:43.554 INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2021-09-14 17:35:43.582 INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 28 ms
+2021-09-14 17:35:43.623 INFO  c.z.zy.aop.controllerAOP.controllerAopAround - getBasicInformationOfBlog
+2021-09-14 17:35:43.623 INFO  c.z.zy.aop.controllerAOP.controllerAopAround - com.zestfulYoghurt.zy.controllers.getResources.GetDate@7f99c457
+2021-09-14 17:35:43.629 INFO  c.z.zy.aop.serviceAOP.ServiceAOPAround - com.zestfulYoghurt.zy.services.baseService.blogService.BlogServiceImp@1b0a4676getBlog====start
+2021-09-14 17:35:43.675 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2021-09-14 17:35:43.823 INFO  com.zaxxer.hikari.pool.PoolBase - HikariPool-1 - Driver does not support get/set network timeout for connections. (com.mysql.jdbc.JDBC4Connection.getNetworkTimeout()I)
+2021-09-14 17:35:43.827 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2021-09-14 17:35:43.870 INFO  c.z.zy.aop.serviceAOP.ServiceAOPAround - com.zestfulYoghurt.zy.services.baseService.blogService.BlogServiceImp@1b0a4676getBlog====end
+2021-09-14 17:35:43.913 INFO  c.z.zy.aop.controllerAOP.controllerAopAround - loginCheckOut
+2021-09-14 17:35:43.913 INFO  c.z.zy.aop.controllerAOP.controllerAopAround - com.zestfulYoghurt.zy.controllers.login.LoginController@66634f54
+2021-09-14 17:35:43.916 INFO  c.z.zy.aop.serviceAOP.ServiceAOPAround - com.zestfulYoghurt.zy.services.loginService.LoginServiceImp@2d049921loginCheckOut====start
+2021-09-14 17:35:43.921 INFO  com.zestfulYoghurt.zy.shiro.loginRealm - 认证
+2021-09-14 17:35:43.921 INFO  com.zestfulYoghurt.zy.shiro.loginRealm - [C@491eb7fa
+2021-09-14 17:35:43.921 INFO  com.zestfulYoghurt.zy.shiro.loginRealm - 123
+2021-09-14 17:35:47.506 INFO  com.zestfulYoghurt.zy.shiro.loginRealm - zhangyi
+2021-09-14 17:35:47.511 INFO  c.z.zy.aop.serviceAOP.ServiceAOPAround - com.zestfulYoghurt.zy.services.loginService.LoginServiceImp@2d049921loginCheckOut====end
+2021-09-14 17:36:47.767 INFO  c.z.zy.aop.controllerAOP.controllerAopAround - getBasicInformationOfBlog
+2021-09-14 17:36:47.767 INFO  c.z.zy.aop.controllerAOP.controllerAopAround - com.zestfulYoghurt.zy.controllers.getResources.GetDate@7f99c457
+2021-09-14 17:36:47.767 INFO  c.z.zy.aop.serviceAOP.ServiceAOPAround - com.zestfulYoghurt.zy.services.baseService.blogService.BlogServiceImp@1b0a4676getBlog====start
+2021-09-14 17:36:47.772 INFO  c.z.zy.aop.serviceAOP.ServiceAOPAround - com.zestfulYoghurt.zy.services.baseService.blogService.BlogServiceImp@1b0a4676getBlog====end
+2021-09-14 17:38:10.820 INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2021-09-14 17:38:10.821 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2021-09-14 17:38:10.826 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2021-09-14 17:38:25.655 INFO  com.zestfulYoghurt.zy.ZyApplication - Starting ZyApplication on zhangyi with PID 16520 (I:\mySelfProjectBlog\blogs\blogs\sources\web-app-serve\target\classes started by 860120017 in I:\mySelfProjectBlog\blogs\blogs\sources\web-app-serve)
+2021-09-14 17:38:25.656 INFO  com.zestfulYoghurt.zy.ZyApplication - No active profile set, falling back to default profiles: default
+2021-09-14 17:38:25.716 INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-09-14 17:38:25.717 INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-09-14 17:38:26.542 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'shiroConfiguration' of type [com.zestfulYoghurt.zy.configuration.shiroConfiguration$$EnhancerBySpringCGLIB$$7ad178a0] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-09-14 17:38:26.924 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'mybatis-org.mybatis.spring.boot.autoconfigure.MybatisProperties' of type [org.mybatis.spring.boot.autoconfigure.MybatisProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-09-14 17:38:26.930 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.mybatis.spring.boot.autoconfigure.MybatisAutoConfiguration' of type [org.mybatis.spring.boot.autoconfigure.MybatisAutoConfiguration$$EnhancerBySpringCGLIB$$237af91] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-09-14 17:38:26.932 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.boot.autoconfigure.jdbc.DataSourceConfiguration$Hikari' of type [org.springframework.boot.autoconfigure.jdbc.DataSourceConfiguration$Hikari] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-09-14 17:38:26.942 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'spring.datasource-org.springframework.boot.autoconfigure.jdbc.DataSourceProperties' of type [org.springframework.boot.autoconfigure.jdbc.DataSourceProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-09-14 17:38:26.965 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'dataSource' of type [com.zaxxer.hikari.HikariDataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-09-14 17:38:27.095 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'sqlSessionFactory' of type [org.apache.ibatis.session.defaults.DefaultSqlSessionFactory] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-09-14 17:38:27.100 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'sqlSessionTemplate' of type [org.mybatis.spring.SqlSessionTemplate] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-09-14 17:38:27.102 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'userMapper' of type [org.mybatis.spring.mapper.MapperFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-09-14 17:38:27.104 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'userMapper' of type [com.sun.proxy.$Proxy48] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-09-14 17:38:27.104 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'myShiroRealm' of type [com.zestfulYoghurt.zy.shiro.loginRealm] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-09-14 17:38:27.108 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'securityManager' of type [org.apache.shiro.web.mgt.DefaultWebSecurityManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-09-14 17:38:27.154 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'authorizationAttributeSourceAdvisor' of type [org.apache.shiro.spring.security.interceptor.AuthorizationAttributeSourceAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-09-14 17:38:27.726 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8085 (http)
+2021-09-14 17:38:27.732 INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8085"]
+2021-09-14 17:38:27.733 INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2021-09-14 17:38:27.733 INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.39]
+2021-09-14 17:38:27.844 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2021-09-14 17:38:27.844 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2126 ms
+2021-09-14 17:38:28.564 INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2021-09-14 17:38:29.255 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2021-09-14 17:38:29.278 INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8085"]
+2021-09-14 17:38:29.298 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8085 (http) with context path ''
+2021-09-14 17:38:29.324 INFO  com.zestfulYoghurt.zy.ZyApplication - Started ZyApplication in 4.201 seconds (JVM running for 5.212)
+2021-09-14 17:38:33.549 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-09-14 17:38:33.549 INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2021-09-14 17:38:33.581 INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 32 ms
+2021-09-14 17:38:33.622 INFO  c.z.zy.aop.controllerAOP.controllerAopAround - getBasicInformationOfBlog
+2021-09-14 17:38:33.622 INFO  c.z.zy.aop.controllerAOP.controllerAopAround - com.zestfulYoghurt.zy.controllers.getResources.GetDate@2c5e7bb6
+2021-09-14 17:38:33.625 INFO  c.z.zy.aop.serviceAOP.ServiceAOPAround - com.zestfulYoghurt.zy.services.baseService.blogService.BlogServiceImp@7bc44449getBlog====start
+2021-09-14 17:38:33.665 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2021-09-14 17:38:33.819 INFO  com.zaxxer.hikari.pool.PoolBase - HikariPool-1 - Driver does not support get/set network timeout for connections. (com.mysql.jdbc.JDBC4Connection.getNetworkTimeout()I)
+2021-09-14 17:38:33.824 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2021-09-14 17:38:33.870 INFO  c.z.zy.aop.serviceAOP.ServiceAOPAround - com.zestfulYoghurt.zy.services.baseService.blogService.BlogServiceImp@7bc44449getBlog====end
+2021-09-14 17:39:04.138 INFO  c.z.zy.aop.controllerAOP.controllerAopAround - getBasicInformationOfBlog
+2021-09-14 17:39:04.138 INFO  c.z.zy.aop.controllerAOP.controllerAopAround - com.zestfulYoghurt.zy.controllers.getResources.GetDate@2c5e7bb6
+2021-09-14 17:39:04.138 INFO  c.z.zy.aop.serviceAOP.ServiceAOPAround - com.zestfulYoghurt.zy.services.baseService.blogService.BlogServiceImp@7bc44449getBlog====start
+2021-09-14 17:39:04.145 INFO  c.z.zy.aop.serviceAOP.ServiceAOPAround - com.zestfulYoghurt.zy.services.baseService.blogService.BlogServiceImp@7bc44449getBlog====end
+2021-09-14 17:39:04.930 INFO  c.z.zy.aop.controllerAOP.controllerAopAround - getBasicInformationOfBlog
+2021-09-14 17:39:04.930 INFO  c.z.zy.aop.controllerAOP.controllerAopAround - com.zestfulYoghurt.zy.controllers.getResources.GetDate@2c5e7bb6
+2021-09-14 17:39:04.930 INFO  c.z.zy.aop.serviceAOP.ServiceAOPAround - com.zestfulYoghurt.zy.services.baseService.blogService.BlogServiceImp@7bc44449getBlog====start
+2021-09-14 17:39:04.932 INFO  c.z.zy.aop.serviceAOP.ServiceAOPAround - com.zestfulYoghurt.zy.services.baseService.blogService.BlogServiceImp@7bc44449getBlog====end
+2021-09-14 17:40:37.458 INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2021-09-14 17:40:37.459 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2021-09-14 17:40:37.471 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
