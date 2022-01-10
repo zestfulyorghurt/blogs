@@ -26,6 +26,9 @@ public class Role implements Serializable {
     //定义角色name名称
     private String roleName;
 
+    //定义权限id
+    private String permissionsId;
+
     //定义每个角色有的权限
     private Set<Permissions> permissions;
 

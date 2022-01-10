@@ -1,5 +1,7 @@
 package com.zestfulYoghurt.zy.controllers.testController;
 
+import com.zestfulYoghurt.zy.pojos.basePojo.ResultBean;
+import com.zestfulYoghurt.zy.pojos.basePojo.User;
 import com.zestfulYoghurt.zy.pojos.configurationBean.ConfigurationTest;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.core.env.Environment;
@@ -10,7 +12,11 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 
-import javax.tools.JavaFileManager;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
+import java.util.HashMap;
+import java.util.Map;
 
 /**
  *获取配置文件中的值
@@ -25,6 +31,8 @@ public class Test1 {
 //    @Value("${server.port}")
 //    private String serverPort;
 
+    HttpSession session;
+
     @Autowired
     private ConfigurationTest configurationTest;
 
@@ -33,7 +41,14 @@ public class Test1 {
 
     @RequestMapping(value = "/test")
     @ResponseBody
-    public String getServerPort(){
+    public Object getServerPort(HttpServletRequest request, HttpServletResponse response){
+
+        session = request.getSession();
+
+        Object user = session.getAttribute("user");
+
+        System.out.println(user);
+
         SimpleMailMessage message = new SimpleMailMessage();
         // 发件人
         message.setFrom("2510906118@qq.com");
@@ -47,7 +62,9 @@ public class Test1 {
         //message.setCc("xxx@qq.com");
         //mailSender.send(message);
         //return configurationTest.getName();
-        return "0";
+        Map<Object, Object> map = new HashMap<>();
+        map.put("id","noLogin");
+        return new ResultBean<Map>(map);
     }
 
 
@@ -59,7 +76,7 @@ public class Test1 {
 
         System.out.println("jsp");
 
-        return "index";
+        return "/WEB-INF/index.jsp";
     }
 
 }

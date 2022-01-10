@@ -14,6 +14,8 @@ public class MessageBean implements Serializable {
 
     private static final long serializableUID = 6L;
 
+    public static String SYS_ERROR = "系统异常";
+
     public static String LOGIN_FAIL = "用户名或密码不正确";
 
     public static String LOGIN_FAIL_USER = "登录失败，用户名不正确";
@@ -23,5 +25,11 @@ public class MessageBean implements Serializable {
     public static String LOGIN_SUCCESS = "登陆成功";
 
     public static String NO_PERMISSION = "没有权限";
+
+    public static String PARAM_ERROR = "参数传递异常！";
+
+    public static String REGISTER_ERROR = "用户注册失败！";
+
+    public static String USERNAME_REPETITION = "用户名已经存在，请更换用户名";
 
 }

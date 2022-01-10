@@ -20,7 +20,7 @@ public class User implements Serializable {
     private static final Long serializableUID = 1L;
 
     //user的id(主键)
-    private Integer userId;
+    private String userId;
 
     //用户名
     private String userName;
@@ -73,7 +73,13 @@ public class User implements Serializable {
     //备注
     private String remark;
 
+    //定义角色id
+    private String rolesId;
+
     //定义用户拥有的角色
     private Set<Role> roles;
+
+    //用户令牌
+    private String token;
 
 }

@@ -1,27 +1,24 @@
 <template>
-  <div id="app">
-    <router-view />
-
-    <router-view name="category" />
-
-    <router-view name="news" />
-
-    <router-view name="news_context" />
-
-
+  <div id="headline_context">
+    <app_bar />
+    <top_line_value style="margin-top:70px"/>
   </div>
 </template>
 
 <script>
-
-const users = {"userName":"zhangyi","password":"123456"};
+import app_bar from "../home_page/app_bar.vue";
+import top_line_value from "./top_line_value.vue";
 
 export default {
-  name: "App",
+  name: "headline_context",
+  components: {
+    app_bar,
+    top_line_value
+  },
   data() {
     return {
       message: "localhost:8080",
-      app_bar_class: false
+      app_bar_class: false,
     };
   },
   methods: {
@@ -39,10 +36,4 @@ export default {
 </script>
 
 <style>
-
-.app_bar_class{
-  display: none;
-}
-
-
 </style>

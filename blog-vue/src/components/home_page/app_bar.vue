@@ -62,23 +62,184 @@
                   "
                   :class="{ activity: user_logo, unactivity: !user_logo }"
                 >
+                  <!-- 显示用户昵称和用户角色 -->
+                  <div style="display: flex; flex-direction: column">
+                    <div
+                      :class="{
+                        user_nickname: user_logo,
+                        un_user_nickname: !user_logo,
+                      }"
+                    >
+                      <span style="margin-top: 5px; margin-bottom: 5px">{{
+                        user_nickname
+                      }}</span>
+                    </div>
+                    <div
+                      :class="{
+                        user_nickname: user_logo,
+                        un_user_nickname: !user_logo,
+                      }"
+                      style="border-bottom: 1px solid gainsboro"
+                    >
+                      <svg
+                        t="1641792505969"
+                        class="icon"
+                        viewBox="0 0 1024 1024"
+                        version="1.1"
+                        xmlns="http://www.w3.org/2000/svg"
+                        p-id="2169"
+                        width="25"
+                        height="25"
+                      >
+                        <path
+                          d="M897 47 122 47c-28.667 0-53.167 10-73.5 30S18 121.333 18 150l0 724c0 28.667 10.167 53 30.5 73s44.833 30 73.5 30l775 0c28.667 0 53-10 73-30s30-44.333 30-73L1000 150c0-18.667-4.5-36-13.5-52S965 69.5 949 60.5 915.667 47 897 47zM949 874c0 9.333-2.333 18-7 26s-11 14.333-19 19-16.667 7-26 7L122 926c-14.667 0-27-5.167-37-15.5S70 888 70 874L70 150c0-9.333 2.333-18 7-26s11-14.167 19-18.5 16.667-6.5 26-6.5l775 0c9.333 0 18 2.167 26 6.5s14.333 10.5 19 18.5 7 16.667 7 26L949 874zM256 678 138 377c-1.333-5.333-2-11.667-2-19 1.333-24 14.667-37.333 40-40 16 1.333 28 10.333 36 27l85 224 82-224c10-18 22.667-27 38-27 25.333 2.667 39.333 16 42 40-1.333 7.333-2.667 13.667-4 19L337 678c-10 18.667-23.333 28-40 28C277 706 263.333 696.667 256 678zM480 668 480 360c0-26.667 13.333-40.667 40-42 25.333 1.333 38.667 15.333 40 42l0 308c-1.333 25.333-14.667 38-40 38C493.333 706 480 693.333 480 668zM609 668 609 365c0-26.667 13.333-40.667 40-42l97 0c85.333 5.333 131 48 137 128-6 80-51 123-135 129l-59 0 0 88c-2 25.333-15.333 38-40 38C622.333 706 609 693.333 609 668zM689 394l0 114 54 0c34-1.333 52.333-20.333 55-57-2.667-35.333-21-54.333-55-57L689 394z"
+                          p-id="2170"
+                          fill="gainsboro"
+                        ></path>
+                      </svg>
+                    </div>
+                  </div>
 
-                <!-- 显示用户昵称和用户角色 -->
-                <div style="display:flex;flex-direction: column;">
-                  <div style="height:25px;border:1px solid red"></div>
-                  <div style="height:25px;border:1px solid red"></div>
-                </div>
+                  <!-- 显示粉丝，关注，获赞 -->
+                  <div
+                    :class="{
+                      able: user_logo,
+                      unable: !user_logo,
+                    }"
+                  >
+                    <div style="display: flex; flex-direction: row">
+                      <div style="width: 34%; text-align: center">
+                        <h4>12</h4>
+                      </div>
+                      <div style="width: 32%; text-align: center">
+                        <h4>45</h4>
+                      </div>
+                      <div style="width: 34%; text-align: center">
+                        <h4>78</h4>
+                      </div>
+                    </div>
+                    <div style="display: flex; flex-direction: row">
+                      <div style="width: 34%; text-align: center; color: grey">
+                        <span>粉丝</span>
+                      </div>
+                      <div style="width: 32%; text-align: center; color: grey">
+                        <span>关注</span>
+                      </div>
+                      <div style="width: 34%; text-align: center; color: grey">
+                        <span>获赞</span>
+                      </div>
+                    </div>
+                  </div>
 
-                <!-- 显示粉丝，关注，获赞 -->
-                <div></div>
+                  <!-- 自定义功能 -->
+                  <div
+                    style="margin-top: 10px"
+                    :class="{
+                      able: user_logo,
+                      unable: !user_logo,
+                    }"
+                  >
+                    <div style="display: flex; flex-direction: column">
+                      <div
+                        class="changeColor"
+                        style="display: flex; flex-direction: row"
+                      >
+                        <span
+                          style="
+                            width: 200px;
+                            margin-left: 5px;
+                            margin-right: 5px;
+                            margin-top: 10px;
+                            margin-bottom: 10px;
+                            text-align: center;
+                          "
+                          >个人中心</span
+                        >
+                      </div>
+                      <div
+                        class="changeColor"
+                        style="display: flex; flex-direction: row"
+                      >
+                        <span
+                          style="
+                            width: 200px;
+                            margin-left: 5px;
+                            margin-right: 5px;
+                            margin-top: 10px;
+                            margin-bottom: 10px;
+                            text-align: center;
+                          "
+                          >学习中心</span
+                        >
+                      </div>
+                      <div
+                        class="changeColor"
+                        style="display: flex; flex-direction: row"
+                      >
+                        <span
+                          style="
+                            width: 200px;
+                            margin-left: 5px;
+                            margin-right: 5px;
+                            margin-top: 10px;
+                            margin-bottom: 10px;
+                            text-align: center;
+                          "
+                          >收藏中心</span
+                        >
+                      </div>
+                      <div
+                        class="changeColor"
+                        style="display: flex; flex-direction: row"
+                      >
+                        <span
+                          style="
+                            width: 200px;
+                            margin-left: 5px;
+                            margin-right: 5px;
+                            margin-top: 10px;
+                            margin-bottom: 10px;
+                            text-align: center;
+                          "
+                          >创作中心</span
+                        >
+                      </div>
+                      <div
+                        class="changeColor"
+                        style="display: flex; flex-direction: row"
+                      >
+                        <span
+                          style="
+                            width: 200px;
+                            margin-left: 5px;
+                            margin-right: 5px;
+                            margin-top: 10px;
+                            margin-bottom: 10px;
+                            text-align: center;
+                          "
+                          >账号管理</span
+                        >
+                      </div>
 
-                <!-- 自定义功能 -->
-                <div></div>
-
-                <!-- 退出登录 -->
-                <div></div>
-
-
+                      <div
+                        @click="logout()"
+                        class="changeColor"
+                        style="display: flex; flex-direction: row"
+                      >
+                        <span
+                          style="
+                            width: 200px;
+                            margin-left: 5px;
+                            margin-right: 5px;
+                            margin-top: 10px;
+                            margin-bottom: 10px;
+                            text-align: center;
+                          "
+                          >退出登录</span
+                        >
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
@@ -100,6 +261,7 @@
 
 <script>
 import { Message } from "element-ui";
+import { Alert } from "element-ui"
 let data = [
   "博客",
   "课程",
@@ -108,14 +270,14 @@ let data = [
   "社区",
   "插件",
   "认证",
-  "开源",
+  "开源"
 ];
 let data2 = ["会员中心", "收藏", "动态", "消息"];
 
 let user = { userName: "zhang", password: "pasword" };
 
 export default {
-  name: "App",
+  name: "app_bar",
   data() {
     const heard_img = window.sessionStorage.getItem("is_login");
     console.log(heard_img);
@@ -126,6 +288,7 @@ export default {
       data2: data2,
       heard_img: heard_img,
       user_logo: false,
+      user_nickname: "zhangyi",
     };
   },
   methods: {
@@ -140,6 +303,18 @@ export default {
     test() {
       this.user_logo = !this.user_logo;
     },
+    logout() {
+      alert("用户已注销");
+      window.sessionStorage.clear();
+      location.reload();
+      // Message.info({
+      //   //设置弹窗提示消息
+      //   message: "1233",
+
+      //   //设置弹出提示时间
+      //   duration: 1000,
+      // });
+    },
   },
 };
 </script>
@@ -151,10 +326,34 @@ export default {
   margin: 0px;
 }
 
+.changeColor:hover {
+  background: #e6e6eb;
+
+  cursor: pointer;
+}
+
+.able {
+  display: block;
+}
+.unable {
+  display: none;
+}
+
+.user_nickname {
+  display: block;
+
+  height: 30px;
+
+  text-align: center;
+}
+
+.un_user_nickname {
+  display: none;
+}
+
 .activity {
   background: red;
   width: 210px;
-  height: 450px;
   margin-left: -80px;
   margin-top: -10px;
   border-radius: 5px;

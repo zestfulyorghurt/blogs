@@ -1,4 +1,4 @@
-package com.zestfulYoghurt.zy.aop.LoggerAop;
+package com.zestfulYoghurt.zy.aop.loggerAop;
 
 import lombok.extern.slf4j.Slf4j;
 import org.aspectj.lang.ProceedingJoinPoint;

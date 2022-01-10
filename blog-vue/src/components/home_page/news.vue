@@ -49,7 +49,7 @@
         </div>
         <div class="lift_one_div_news_title">
           <h4>
-            <a href="">{{ lift_one_div_news_title }}</a>
+            <a :href="jump_url">{{ lift_one_div_news_title }}</a>
           </h4>
         </div>
         <div class="lift_one_div_news_context">
@@ -204,6 +204,7 @@ export default {
       lift_one_div_news_title: lift_one_div_news_title,
       lift_one_div_news_context: lift_one_div_news_context,
       news_context: news_context,
+      jump_url: "http://localhost:8080/#/headline"
     };
   },
   methods: {

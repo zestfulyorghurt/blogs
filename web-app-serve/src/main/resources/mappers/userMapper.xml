@@ -2,12 +2,14 @@
         PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.zestfulYoghurt.zy.mappers.UserMapper">
+
     <select id="select" parameterType="com.zestfulYoghurt.zy.pojos.basePojo.User"
             resultType="com.zestfulYoghurt.zy.pojos.basePojo.User">
-        select * from user where name = #{name}
+        select * from user where user_name = #{username}
     </select>
 
-    <insert id="insert" parameterType="map">
-        insert into user values (null,#{name},#{password},#{salt},null)
+    <insert id="insert" parameterType="com.zestfulYoghurt.zy.pojos.basePojo.User">
+        insert into user values (null,#{username},#{password},#{salt},null)
     </insert>
+
 </mapper>

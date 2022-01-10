@@ -25,7 +25,9 @@ public class Tools {
      **/
     public static class encryption {
 
-        public static String passwordEncryption(String password, String salt, Integer count) {
+        public static final int count = 2;
+
+        public static String passwordEncryption(String password, String salt) {
 
             return new Md5Hash(password, salt, count).toString();
 

@@ -30,6 +30,8 @@
 </template>
 
 <script>
+import { Message } from "element-ui";
+
 export default {
   name: "App",
 
@@ -46,6 +48,8 @@ export default {
     login() {
       const user = { userName: this.userName, password: this.password };
 
+      console.log(user);
+
       this.$axios({
         method: "post",
 
@@ -53,10 +57,10 @@ export default {
 
         url: "http://localhost:8086/loginCheckOut",
       }).then((resp) => {
+
+        console.log(resp);
+
         if (resp.data.message === "success") {
-
-          console.log(resp);
-
           //将登录标签隐藏，显示用户头像
           window.sessionStorage.setItem("is_login", true);
 
@@ -75,6 +79,7 @@ export default {
             }
 
             return config;
+            
           });
 
           //跳转博客的主界面，隐式的携带数据
@@ -83,17 +88,18 @@ export default {
 
             params: { id: "2", heard_img: true },
           });
-        } else {
-          //使用element-ui中的message消息弹窗提示登陆失败
-          //如果返回的信息不为success的话，就说明登录失败
-          Message.error({
-            //设置弹窗提示消息
-            message: resp.data.data.message,
-
-            //设置弹出提示时间
-            duration: 800,
-          });
         }
+        // else {
+        //   //使用element-ui中的message消息弹窗提示登陆失败
+        //   //如果返回的信息不为success的话，就说明登录失败
+        //   Message.error({
+        //     //设置弹窗提示消息
+        //     message: resp.data.data.message,
+
+        //     //设置弹出提示时间
+        //     duration: 800,
+        //   });
+        // }
       });
     },
   },
@@ -105,25 +111,23 @@ export default {
     text-align: center;  
 } */
 
-.button_style{
-
+.button_style {
   width: 80px;
 
   height: 30px;
 
   border: 1px solid red;
- 
+
   color: red;
-  
+
   background: white;
 
   margin-left: 10px;
 
-  transition:background 0.5s;
-
+  transition: background 0.5s;
 }
 
-.button_style:hover{
+.button_style:hover {
   background: red;
   color: white;
 }

@@ -1,58 +1,51 @@
 package com.zestfulYoghurt.zy.controllers.login;
 
+import com.zestfulYoghurt.zy.pojos.basePojo.MessageBean;
 import com.zestfulYoghurt.zy.pojos.basePojo.ResultBean;
 import com.zestfulYoghurt.zy.pojos.basePojo.User;
 import com.zestfulYoghurt.zy.services.loginService.LoginService;
 import lombok.extern.slf4j.Slf4j;
+import org.springframework.boot.web.servlet.server.Session;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 
 import javax.annotation.Resource;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
 
 @Slf4j
 @Controller("loginController")
 public class LoginController {
 
+    HttpSession session;
+
+    //定义返回结果对象
     ResultBean resultBean;
-
-    private String username = null;
-
-    private String password = null;
 
     @Resource(name = "loginServiceImp")
     private LoginService loginServiceImp;
 
-    //获取前端传过来的username和password
-    //根据username和password的值判断是否进行登录验证，不为空直接调用service进行登录验证，为空直接返回结果
     @RequestMapping(value = "/loginCheckOut")
     @ResponseBody
-    public Object loginCheckOut( @RequestBody User user) {
+    public Object loginCheckOut(@RequestBody User user) {
 
+        //判断用户传递参数是否发生异常
         if(user!=null){
 
-            if(user.getUserName() != null && user.getUserName() != ""){
+            if(user.getUserName() != null && user.getPassword() != null){
 
-                username = user.getUserName();
-
-            }
-
-            if(user.getPassword() != null && user.getPassword() != ""){
-
-                password = user.getPassword();
+                resultBean = loginServiceImp.loginCheckOut(user.getUserName(),user.getPassword());
 
             }
 
-            if(username != null && password != null){
+        }else{
 
-                resultBean = loginServiceImp.loginCheckOut(username,password);
+            log.error(MessageBean.PARAM_ERROR);
 
-            }else{
-
-                resultBean = new ResultBean(-2,"用户名或者密码不能为空","登录失败");
-
-            }
+            resultBean = new ResultBean(-2,MessageBean.SYS_ERROR);
 
         }
 

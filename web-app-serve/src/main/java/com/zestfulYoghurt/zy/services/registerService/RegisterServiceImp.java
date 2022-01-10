@@ -1,8 +1,11 @@
 package com.zestfulYoghurt.zy.services.registerService;
 
 import com.zestfulYoghurt.zy.mappers.UserMapper;
+import com.zestfulYoghurt.zy.pojos.basePojo.MessageBean;
+import com.zestfulYoghurt.zy.pojos.basePojo.ResultBean;
 import com.zestfulYoghurt.zy.pojos.basePojo.User;
 import com.zestfulYoghurt.zy.services.Validate;
+import com.zestfulYoghurt.zy.tool.Tools;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import javax.annotation.Resource;
@@ -12,50 +15,58 @@ import java.util.Map;
 @Service("registerServiceImp")
 public class RegisterServiceImp implements RegisterService {
 
+    //用户重复
+    public static final int REPETITION = 1;
+
+    //用户不重复
+    public static final int NOT_REPETITION = 0;
+
     @Autowired
     private UserMapper userMapper;
 
     @Resource(name = "Validate")
     private Validate validate;
 
+    private ResultBean resultBean;
+
 
     //用户注册功能 todo 实现用户注册服务
     @Override
-    public Map register(User user) {
-
-        //todo 后期调用手机或者邮箱填写注册验证码
-        HashMap<Object, Object> responseData = new HashMap<>();
+    public ResultBean register(User user) {
 
         //向数据库插入用户信息之前进行用户名是否重复验证
-        Integer result = validate.userRegisterValidate(user);
+        int ifRepetition = validate.userNameRepetitionValidate(user);
 
-        switch (result){
+        //将用户的密码进行加密,md5,两次加密
+        String encryptionPassword = Tools.encryption.passwordEncryption(user.getPassword(), user.getUserName());
 
-            case 0:
+        //将加密后的密码封装到user对象中
+        user.setPassword(encryptionPassword);
 
-                try{
+        if(ifRepetition == 0){
 
-                    userMapper.insert(user);
+            //执行用户注册，将用户信息导入到数据库表中
+            //向数据库插入数据如果出现异常，返回错误信息
+            try{
 
-                }catch(Exception e){
+                userMapper.insert(user);
 
-                    responseData.put("message","注册失败，未知异常");
+            }catch(Exception e){
 
-                }
+                resultBean = new ResultBean(-2,e, MessageBean.REGISTER_ERROR);
 
-                responseData.put("message","注册成功");
+                return resultBean;
 
-                break;
+            }
 
-            case 1:
+        }else{
 
-                responseData.put("message","注册失败，用户名重复");
-
-                break;
+            resultBean = new ResultBean(-2,MessageBean.USERNAME_REPETITION);
 
         }
 
-        return responseData;
+
+        return resultBean;
 
     }
 

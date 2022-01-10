@@ -21,9 +21,9 @@ public class Validate {
     private UserMapper userMapper;
 
     //效验数据库是否有重复的用户名
-    public Integer userRegisterValidate(User user) {
+    public Integer userNameRepetitionValidate(User user) {
 
-        List<User> users = userMapper.select(user);
+        List<User> users = userMapper.select(user.getUserName(),user.getPassword());
 
         if (users == null) {
 

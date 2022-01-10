@@ -19,9 +19,6 @@ import java.util.List;
 @Slf4j
 public class LoginRealm extends AuthorizingRealm {
 
-    //定义密码加密次数
-    public static final int count = 3;
-
     @Autowired
     private UserMapper userMapper;
 
@@ -48,9 +45,9 @@ public class LoginRealm extends AuthorizingRealm {
 
         //从令牌中获取用户密码
         String password = null;
-        Object passwordChar = userToken.getCredentials();
+        char[] passwordChar = (char[]) userToken.getCredentials();
         if(passwordChar!=null){
-            password = passwordChar.toString();
+            password = new String(passwordChar);
         }
 
         //将用户输入的用户名和密码封装成实体User类
@@ -62,17 +59,13 @@ public class LoginRealm extends AuthorizingRealm {
         //通过用户名去查询
         List<User> userList = null;
         try{
-            if(user.getUserName()!=null||user.getPassword()!=""&&user.getPassword()!=null||user.getPassword()!=""){
-                userList = userMapper.select(user);
-            }else{
-                return simpleAuthenticationInfo;
-            }
+            userList = userMapper.select(username,password);
         }catch(Exception e) {
             log.info(e.toString());
         }
 
         //定义唯一用户名对应的用户
-        User dbUser;
+        User dbUser = null;
 
         if(userList!=null){
             //如果返回list的Size为0，则抛出异常，并打印日志
@@ -89,24 +82,24 @@ public class LoginRealm extends AuthorizingRealm {
 
                 //将client发过来的用户密码进行加密处理:password--client传过来的密码,user.getSalt()--从数据库获取的用户加密所需要的盐,count--是
                 //通过md5算法加密的次数
-                String dbPassword = Tools.encryption.passwordEncryption(password, dbUser.getSalt(), count);
+                String dbPassword = Tools.encryption.passwordEncryption(password, dbUser.getSalt());
 
                 //将加密过得用户密码和数据库中的密码进行对比，如果不同就抛出异常，并打印日志
                 if(dbPassword.equals(dbUser.getPassword())){
+
+                    simpleAuthenticationInfo = new SimpleAuthenticationInfo(user, password, getName());
+
+                }else{
 
                     log.error(MessageBean.LOGIN_FAIL_PASSWORD);
 
                     throw new UnsupportedTokenException();
 
-                }else{
-
-                    simpleAuthenticationInfo = new SimpleAuthenticationInfo(username, password, getName());
-
                 }
 
             }
-        }
 
+        }
 
         return simpleAuthenticationInfo;
 

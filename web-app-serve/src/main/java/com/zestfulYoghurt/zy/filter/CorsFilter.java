@@ -36,8 +36,8 @@ public class CorsFilter implements Filter {
         //Access-Control-Max-Age是设置异步连接的有效性，也就是浏览器第一次请求的发送时间，以秒为单位
         response.setHeader("Access-Control-Max-Age","3600");
 
-        //不知到有什么用 todo
-        response.setHeader("Access-Control-Allow-Headers","Origin, X-Requested-With, Content-Type, Accept");
+        //不知到有什么用 设置响应头中的参数
+        response.setHeader("Access-Control-Allow-Headers","Origin, X-Requested-With, Content-Type, Accept,Authorization");
 
         filterChain.doFilter(servletRequest,response);
 

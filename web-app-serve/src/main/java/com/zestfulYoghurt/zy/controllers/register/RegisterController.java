@@ -1,5 +1,7 @@
 package com.zestfulYoghurt.zy.controllers.register;
 
+import com.zestfulYoghurt.zy.pojos.basePojo.MessageBean;
+import com.zestfulYoghurt.zy.pojos.basePojo.ResultBean;
 import com.zestfulYoghurt.zy.pojos.basePojo.User;
 import com.zestfulYoghurt.zy.services.registerService.RegisterService;
 import lombok.extern.slf4j.Slf4j;
@@ -21,17 +23,32 @@ import java.util.Map;
 @Slf4j
 public class RegisterController {
 
+    public ResultBean resultBean;
+
     @Resource(name = "registerServiceImp")
     private RegisterService registerServiceImp;
 
     @RequestMapping(value = "/register")
-    public Map register(@RequestBody User user) {
+    public ResultBean register(@RequestBody User user) {
 
-        log.info("进入register方法");
+        //判断用户传递参数是否发生异常
+        if(user != null){
 
-        Map response = registerServiceImp.register(user);
+            if(user.getUserName() != null && user.getPassword() != null){
 
-        return response;
+                resultBean = registerServiceImp.register(user);
+
+            }
+
+        }else{
+
+            log.error(MessageBean.PARAM_ERROR);
+
+            resultBean = new ResultBean(-2,MessageBean.SYS_ERROR);
+
+        }
+
+        return resultBean;
 
     }
 
