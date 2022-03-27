@@ -1,8 +1,0 @@
-2021-07-22 18:46:04.382 WARN  o.s.w.context.support.GenericWebApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'requestMappingHandlerMapping' defined in class path resource [org/springframework/boot/autoconfigure/web/servlet/WebMvcAutoConfiguration$EnableWebMvcConfiguration.class]: Invocation of init method failed; nested exception is java.lang.IllegalStateException: Ambiguous mapping. Cannot map 'registerController' method 
-com.zestfulYoghurt.zy.controllers.register.registerController#register(Map)
-to { /register}: There is already 'loginController' bean method
-com.zestfulYoghurt.zy.controllers.login.LoginController#register(Map) mapped.
-2021-07-22 18:47:41.184 WARN  o.s.w.context.support.GenericWebApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'requestMappingHandlerMapping' defined in class path resource [org/springframework/boot/autoconfigure/web/servlet/WebMvcAutoConfiguration$EnableWebMvcConfiguration.class]: Invocation of init method failed; nested exception is java.lang.IllegalStateException: Ambiguous mapping. Cannot map 'registerController' method 
-com.zestfulYoghurt.zy.controllers.register.registerController#register(Map)
-to { /register}: There is already 'loginController' bean method
-com.zestfulYoghurt.zy.controllers.login.LoginController#register(Map) mapped.
