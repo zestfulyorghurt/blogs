@@ -13,6 +13,7 @@ import axios from 'axios'
 import { Message } from 'element-ui'
 import ElementUI from "element-ui";
 import "element-ui/lib/theme-chalk/index.css";
+import './icons'
 
 Vue.use(ElementUI);
 
