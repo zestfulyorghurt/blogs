@@ -2,8 +2,6 @@
   <div id="app">
     <router-view />
 
-    <!-- <router-view name="category" /> -->
-
     <router-view name="news" />
 
     <router-view name="news_context" />

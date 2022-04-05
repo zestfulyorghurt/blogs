@@ -13,7 +13,6 @@ export default new Router({
         news:resolve=>require(['@/components/home_page/news'],resolve),
         news_context:resolve=>require(['@/components/home_page/news_context'],resolve),
         app_bar:resolve=>require(['@/components/home_page/app_bar'],resolve),
-        category:resolve=>require(['@/components/home_page/category'],resolve)
       } 
     },{
       path: '/login',
