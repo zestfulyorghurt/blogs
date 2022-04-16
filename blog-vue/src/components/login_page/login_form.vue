@@ -1,13 +1,13 @@
 <template>
   <div id="login_form">
-    <div class="form_class">
+    <div class="flex_colum_center">
       
       <!-- 登录界面的登录logo -->
-      <div class="form_class2" style="height: 100px">
+      <div class="flex_row_center" style="height: 100px">
         <img src="@/assets/csdn_copy_logo.jpg" draggable="false"/>
       </div>
       <!-- 输入用户名 -->
-      <div class="form_class2">
+      <div class="flex_row_center">
         <input
           v-model="userName"
           id="userName"
@@ -16,7 +16,7 @@
         />
       </div>
       <!-- 输入用户密码 -->
-      <div class="form_class2">
+      <div class="flex_row_center">
         <input
           v-model="password"
           type="password"
@@ -26,7 +26,7 @@
         />
       </div>
       <!-- 登录或注册按钮 -->
-      <div class="button_group">
+      <div class="flex_row_center">
         <button class="button_style" @click="login">登录</button>
         <button class="button_style">注册</button>
       </div>
@@ -117,13 +117,39 @@ export default {
     text-align: center;  
 } */
 
+/* 水平排列 */
+.flex_row {
+  display: flex;
+  flex-direction: row;
+}
+
+/* 竖排列 */
+.flex_colum {
+  display: flex;
+  flex-direction: column;
+}
+
+/* 水平居中 */
+.flex_row_center {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+/* 垂直居中 */
+.flex_colum_center {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
 .button_style {
   width: 80px;
   height: 30px;
+  margin: 10px 10px;
   border: 1px solid red;
   color: red;
   background: white;
-  margin-left: 10px;
   outline: none;
   transition: background 0.5s;
 }
@@ -141,25 +167,6 @@ export default {
   border-radius: 10px;
   /* 设置div阴影 */
   box-shadow: 5px 5px 5px #f0f0f0;
-}
-
-.form_class {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
-.form_class2 {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-}
-
-.button_group {
-  display: flex;
-  margin-bottom: 10px;
-  flex-direction: row;
-  justify-content: center;
 }
 
 .input_class {
