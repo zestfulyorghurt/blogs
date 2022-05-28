@@ -1,7 +1,7 @@
 <template>
   <div id="app_bar">
     <!-- csdn网站的导航栏 -->
-    <div id="toolbarBox" style="min-height: 48px">
+    <div id="toolbarBox">
       <div>
         <div class="flex_row_center">
           
@@ -100,7 +100,7 @@ export default {
 };
 </script>
 
-<style>
+<style scoped>
 * {
   padding: 0px;
 
@@ -189,12 +189,20 @@ body {
   background: #fafafa;
 }
 
+/* 设置导航栏的最小宽度和最小高度 */
 #toolbarBox {
   position: fixed;
   top: 0px;
   width: 100%;
+  /* 设置导航栏的阴影效果 */
   box-shadow: 2px 3px 4px #f0f0f0;
   background: #ffffff;
+  /* 设置导航栏的最小高度 */
+  min-height: 48px;
+  /* 设置导航栏的最小宽度 */
+  min-width: 1470px;
+  /* 设置text文本不可以被选中 */
+  user-select: none;
 }
 
 
@@ -218,4 +226,5 @@ body {
   margin-left: 9px;
   margin-right: 9px;
 }
+
 </style>

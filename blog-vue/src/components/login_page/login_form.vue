@@ -52,25 +52,29 @@ export default {
       // 用户信息封装
       const user = { userName: this.userName, password: this.password }
       //调用登录api
-      this.$axios({
-        method: "post",
-        data: user,
-        url: "http://localhost:8086/login",
-      }).then((resp) => {
-        console.log(resp)
-        if (resp.data.message === "success") {
-          console.log("----用户登陆成功----")
-          //对画面进行对应的渲染
-          loginSuccessViewRender()
-          //请求成功后在request的请求头中设置token
-          loginSuccessRequestSetting()
-          //TODO跳转界面需要进行重新封装
-          //跳转博客的主界面，隐式的携带数据
-          this.$router.push({
-            name: "blog",
-            params: { id: "2", heard_img: true },
-          })
-        }
+      this.$api.login.doLogin().then((res) =>{
+        console.log(res)
+      })
+      
+      // this.$axios({
+      //   method: "post",
+      //   data: user,
+      //   url: "http://localhost:8086/login",
+      // }).then((resp) => {
+      //   console.log(resp)
+      //   if (resp.data.message === "success") {
+      //     console.log("----用户登陆成功----")
+      //     //对画面进行对应的渲染
+      //     loginSuccessViewRender()
+      //     //请求成功后在request的请求头中设置token
+      //     loginSuccessRequestSetting()
+      //     //TODO跳转界面需要进行重新封装
+      //     //跳转博客的主界面，隐式的携带数据
+      //     this.$router.push({
+      //       name: "blog",
+      //       params: { id: "2", heard_img: true },
+      //     })
+      //   }
         // else {
         //   //使用element-ui中的message消息弹窗提示登陆失败
         //   //如果返回的信息不为success的话，就说明登录失败
@@ -82,7 +86,7 @@ export default {
         //     duration: 800,
         //   });
         // }
-      })
+      //})
     },
     //用户登录成功后对画面进行渲染
     loginSuccessViewRender() {
