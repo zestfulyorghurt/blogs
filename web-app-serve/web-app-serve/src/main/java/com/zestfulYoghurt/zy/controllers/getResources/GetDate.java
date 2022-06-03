@@ -35,7 +35,7 @@ public class GetDate {
 
         List<Blog> blogs = blogServiceImp.getBlog(blog);
 
-        ResultBean resultBean = new ResultBean(blogs);
+        ResultBean resultBean = new ResultBean(null,null,blogs);
 
         return resultBean;
 

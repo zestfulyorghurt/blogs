@@ -1,6 +1,7 @@
 package com.zestfulYoghurt.zy.controllers.register;
 
-import com.zestfulYoghurt.zy.pojos.basePojo.MessageBean;
+import com.zestfulYoghurt.zy.common.ResultCode;
+import com.zestfulYoghurt.zy.common.TextMessage;
 import com.zestfulYoghurt.zy.pojos.basePojo.ResultBean;
 import com.zestfulYoghurt.zy.pojos.basePojo.User;
 import com.zestfulYoghurt.zy.services.registerService.RegisterService;
@@ -10,7 +11,6 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 import javax.annotation.Resource;
-import java.util.Map;
 
 /**
  * ClassName registerController
@@ -42,9 +42,9 @@ public class RegisterController {
 
         }else{
 
-            log.error(MessageBean.PARAM_ERROR);
+            log.error(TextMessage.PARAM_ERROR);
 
-            resultBean = new ResultBean(-2,MessageBean.SYS_ERROR);
+            resultBean = new ResultBean(ResultCode.FAIL_LOGIN, TextMessage.SYS_ERROR,null);
 
         }
 

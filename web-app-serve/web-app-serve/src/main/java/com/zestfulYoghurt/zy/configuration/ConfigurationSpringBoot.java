@@ -56,21 +56,6 @@ import java.util.HashMap;
 
     }
 
-
-
-        //解决跨域问题 todo 如果有shiro拦截器，这种方法解决跨域问题会失效
-        @Override
-        public void addCorsMappings(CorsRegistry registry) {
-
-            registry.addMapping("/**")//添加访问路径
-                    .allowedOrigins("*")//允许的域，配置为所有
-                    .allowedMethods("GET","HEAD","POST","DELETE","OPTIONS","PUT")//请求方式，配置为所有
-                    .allowCredentials(true)//是否允许，设置为是
-                    .maxAge(3600) //设置验证的最大时间
-                    .allowedHeaders("*"); //设置响应头为全部
-
-        }
-
     @Bean("defaultAdvisorAutoProxyCreator")
     @ConditionalOnMissingBean
     public DefaultAdvisorAutoProxyCreator defaultAdvisorAutoProxyCreator() {

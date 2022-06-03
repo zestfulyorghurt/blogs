@@ -1,7 +1,7 @@
 package com.zestfulYoghurt.zy.shiro;
 
 import com.zestfulYoghurt.zy.mappers.UserMapper;
-import com.zestfulYoghurt.zy.pojos.basePojo.MessageBean;
+import com.zestfulYoghurt.zy.common.TextMessage;
 import com.zestfulYoghurt.zy.pojos.basePojo.User;
 import com.zestfulYoghurt.zy.tool.Tools;
 import lombok.extern.slf4j.Slf4j;
@@ -71,7 +71,7 @@ public class LoginRealm extends AuthorizingRealm {
             //如果返回list的Size为0，则抛出异常，并打印日志
             if(userList.size() == 0){
 
-                log.error(MessageBean.LOGIN_FAIL);
+                log.error(TextMessage.LOGIN_FAIL);
 
                 throw new UnknownAccountException();
 
@@ -91,7 +91,7 @@ public class LoginRealm extends AuthorizingRealm {
 
                 }else{
 
-                    log.error(MessageBean.LOGIN_FAIL_PASSWORD);
+                    log.error(TextMessage.LOGIN_FAIL_PASSWORD);
 
                     throw new UnsupportedTokenException();
 

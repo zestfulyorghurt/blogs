@@ -76,4 +76,20 @@ public class User implements Serializable {
     //定义用户拥有的角色
     private Set<Role> roles;
 
+
+    //用户信息check
+    private boolean isValued = true;
+    public boolean isValued(){
+
+        if(userName == null || "".equals(userName)){
+            isValued = false;
+        }
+
+        if(password == null || "".equals(password)){
+            isValued = false;
+        }
+
+        return isValued;
+    }
+
 }

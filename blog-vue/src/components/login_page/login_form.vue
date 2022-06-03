@@ -52,7 +52,7 @@ export default {
       // 用户信息封装
       const user = { userName: this.userName, password: this.password }
       //调用登录api
-      this.$api.login.doLogin().then((res) =>{
+      this.$api.login.doLogin(user).then((res) =>{
         console.log(res)
       })
       

@@ -1,4 +1,4 @@
-package com.zestfulYoghurt.zy.pojos.basePojo;
+package com.zestfulYoghurt.zy.common;
 
 import java.io.Serializable;
 
@@ -10,7 +10,7 @@ import java.io.Serializable;
  * @date 2021/11/0916:30
  */
 
-public class MessageBean implements Serializable {
+public class TextMessage implements Serializable {
 
     private static final long serializableUID = 6L;
 
@@ -31,5 +31,7 @@ public class MessageBean implements Serializable {
     public static String REGISTER_ERROR = "用户注册失败！";
 
     public static String USERNAME_REPETITION = "用户名已经存在，请更换用户名";
+
+    public static String DATA_FORMAT_ERROR = "数据格式异常";
 
 }

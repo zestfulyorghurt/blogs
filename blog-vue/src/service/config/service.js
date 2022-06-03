@@ -1,4 +1,6 @@
     import axios from 'axios'
+    
+    import qs from 'qs' //引入qs，用来序列化post类型的数据，否则后端无法接收到数据
 
     //设置post请求头
     axios.defaults.headers.post['Content-Type'] = 'application/x-www-form-urlencoded;charset=UTF-8';
@@ -39,8 +41,8 @@
             return instence.get(url,{params:data})
         },
         post(url,data){
-            //可能需要改
-            return instence.post(url,JSON.stringify(data))
+            console.log(data)
+            return instence.post(url,data)
         }    
     }
 

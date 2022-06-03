@@ -1,9 +1,8 @@
 package com.zestfulYoghurt.zy.services.loginService;
 
 import com.zestfulYoghurt.zy.mappers.UserMapper;
-import com.zestfulYoghurt.zy.pojos.basePojo.MessageBean;
+import com.zestfulYoghurt.zy.common.TextMessage;
 import com.zestfulYoghurt.zy.pojos.basePojo.ResultBean;
-import com.zestfulYoghurt.zy.pojos.basePojo.Role;
 import com.zestfulYoghurt.zy.pojos.basePojo.User;
 import com.zestfulYoghurt.zy.tool.JwtUtil;
 import lombok.extern.slf4j.Slf4j;
@@ -14,8 +13,6 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.*;
-
-import static com.zestfulYoghurt.zy.pojos.basePojo.ResultBean.FAIL_LOGIN;
 
 /**
  * ClassName loginServiceImp
@@ -94,11 +91,11 @@ public class LoginServiceImp implements LoginService {
 
             data.put("token",JwtToken);
 
-            resultBean = new ResultBean<>(data);
+            resultBean = new ResultBean<>(null,null,data);
 
         } catch (Exception e) {
 
-            return new ResultBean(e, FAIL_LOGIN, MessageBean.LOGIN_FAIL);
+            return new ResultBean(null, TextMessage.LOGIN_FAIL,null);
             //登录失败
             //resultBean = new ResultBean<>(e, FAIL_LOGIN, MessageBean.LOGIN_FAIL);
 

@@ -1,7 +1,8 @@
 package com.zestfulYoghurt.zy.services.registerService;
 
+import com.zestfulYoghurt.zy.common.ResultCode;
 import com.zestfulYoghurt.zy.mappers.UserMapper;
-import com.zestfulYoghurt.zy.pojos.basePojo.MessageBean;
+import com.zestfulYoghurt.zy.common.TextMessage;
 import com.zestfulYoghurt.zy.pojos.basePojo.ResultBean;
 import com.zestfulYoghurt.zy.pojos.basePojo.User;
 import com.zestfulYoghurt.zy.services.Validate;
@@ -9,8 +10,6 @@ import com.zestfulYoghurt.zy.tool.Tools;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import javax.annotation.Resource;
-import java.util.HashMap;
-import java.util.Map;
 
 @Service("registerServiceImp")
 public class RegisterServiceImp implements RegisterService {
@@ -53,7 +52,7 @@ public class RegisterServiceImp implements RegisterService {
 
             }catch(Exception e){
 
-                resultBean = new ResultBean(-2,e, MessageBean.REGISTER_ERROR);
+                resultBean = new ResultBean(ResultCode.FAIL_LOGIN, TextMessage.REGISTER_ERROR,null);
 
                 return resultBean;
 
@@ -61,7 +60,7 @@ public class RegisterServiceImp implements RegisterService {
 
         }else{
 
-            resultBean = new ResultBean(-2,MessageBean.USERNAME_REPETITION);
+            resultBean = new ResultBean(ResultCode.FAIL_LOGIN, TextMessage.USERNAME_REPETITION,null);
 
         }
 

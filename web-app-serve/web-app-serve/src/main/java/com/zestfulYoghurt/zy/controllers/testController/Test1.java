@@ -64,7 +64,7 @@ public class Test1 {
         //return configurationTest.getName();
         Map<Object, Object> map = new HashMap<>();
         map.put("id","noLogin");
-        return new ResultBean<Map>(map);
+        return new ResultBean(null,null,map);
     }
 
 
