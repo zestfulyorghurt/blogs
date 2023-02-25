@@ -6,7 +6,8 @@ const login = {
         return api.post("/api/loginCheckOut",data);
     },
     doRegiste(data){
-        return api.post("/api/registe");
+        console.log(data);
+        return api.post("/api/registe",data);
     }
 }
 

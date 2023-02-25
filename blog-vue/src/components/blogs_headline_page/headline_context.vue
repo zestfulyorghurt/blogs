@@ -6,13 +6,11 @@
 </template>
 
 <script>
-import app_bar from "../home_page/app_bar.vue";
 import top_line_value from "./top_line_value.vue";
 
 export default {
   name: "headline_context",
   components: {
-    app_bar,
     top_line_value
   },
   data() {

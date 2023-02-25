@@ -25,9 +25,6 @@ public class RegisterController {
 
     public ResultBean resultBean;
 
-    @Resource(name = "registerServiceImp")
-    private RegisterService registerServiceImp;
-
     @RequestMapping(value = "/register")
     public ResultBean register(@RequestBody User user) {
 
@@ -36,7 +33,7 @@ public class RegisterController {
 
             if(user.getUserName() != null && user.getPassword() != null){
 
-                resultBean = registerServiceImp.register(user);
+                //resultBean = registerServiceImp.register(user);
 
             }
 

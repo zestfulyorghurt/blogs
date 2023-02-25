@@ -1,10 +1,6 @@
 <template>
   <div id="news_context">
-    <div
-      class="bolg_list flex_row_center"
-      v-for="(item, index) in data"
-      :key="index"
-    >
+    <div class="bolg_list flex_row_center" v-for="(item, index) in data" :key="index">
       <div style="width: 1050px">
         <!-- 博客简介标题 -->
         <div style="margin: 1em 0em 0em 0em">
@@ -35,10 +31,7 @@
               <!-- 点赞 -->
               <div class="flex_row" style="cursor: pointer; margin-left: 1em">
                 <div class="flex_colum_center">
-                  <svg-icon
-                    icon-class="like_off"
-                    style="width: 1.5em; height: 1.2em"
-                  ></svg-icon>
+                  <svg-icon icon-class="like_off" style="width: 1.5em; height: 1.2em"></svg-icon>
                 </div>
                 <div>
                   <span style="margin-left: 0.5em">{{ item.like }}</span>
@@ -48,10 +41,7 @@
               <!-- 点踩 -->
               <div class="flex_row" style="cursor: pointer; margin-left: 1em">
                 <div class="flex_colum_center">
-                  <svg-icon
-                    icon-class="not_like_off"
-                    style="width: 1em; height: 1em"
-                  ></svg-icon>
+                  <svg-icon icon-class="not_like_off" style="width: 1em; height: 1em"></svg-icon>
                 </div>
                 <div>
                   <span style="margin-left: 0.5em">{{ item.not_like }}</span>
@@ -183,7 +173,8 @@ export default {
 .text {
   max-width: 100%;
   display: inline-block;
-  overflow-wrap: break-word; /*  css3属性，当内容超过指定容器的边界时是否断行  */
+  overflow-wrap: break-word;
+  /*  css3属性，当内容超过指定容器的边界时是否断行  */
   text-align: left;
   font-size: 16px;
   color: darkgray;

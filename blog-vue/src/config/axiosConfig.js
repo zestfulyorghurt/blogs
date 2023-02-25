@@ -5,8 +5,6 @@ import { Message } from 'element-ui'
 
 axios.interceptors.response.use(function(response){
     
-    console.log("77877")
-
     //如果用户没有登录，会跳转到登录界面
     if(response.data.data.id === "noLogin"){
 

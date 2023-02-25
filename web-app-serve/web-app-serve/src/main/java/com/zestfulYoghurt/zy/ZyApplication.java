@@ -1,8 +1,10 @@
 package com.zestfulYoghurt.zy;
 
+import com.zestfulYoghurt.zy.common.MyExceptionResolver;
 import org.mybatis.spring.annotation.MapperScan;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.context.annotation.Bean;
 
 @SpringBootApplication
 @MapperScan("com.zestfulYoghurt.zy.mappers")
@@ -14,4 +16,9 @@ public class ZyApplication {
 
     }
 
+    // 注册统一异常处理bean
+    @Bean
+    public MyExceptionResolver myExceptionResolver() {
+        return new MyExceptionResolver();
+    }
 }

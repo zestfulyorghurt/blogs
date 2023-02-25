@@ -9,7 +9,7 @@
     </select>
 
     <insert id="insert" parameterType="com.zestfulYoghurt.zy.pojos.basePojo.User">
-        insert into user values (null,#{userName},#{password},#{salt},null)
+         insert into user values (#{userName},#{password},#{rolesDB})
     </insert>
 
 </mapper>

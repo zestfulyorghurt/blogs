@@ -79,12 +79,9 @@
 </template>
 
 <script>
-import app_bar from "../home_page/app_bar.vue";
-
 export default {
   name: "top_line_value",
   components: {
-    app_bar,
   },
   data() {
     return {

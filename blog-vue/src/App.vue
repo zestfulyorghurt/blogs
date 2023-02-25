@@ -1,12 +1,8 @@
 <template>
   <div id="app">
+
     <router-view />
-
-    <router-view name="news" />
-
-    <router-view name="news_context" />
-
-
+  
   </div>
 </template>
 
@@ -38,7 +34,7 @@ export default {
 
 <style>
 
-.app_bar_class{
+.app_bar_classF{
   display: none;
 }
 

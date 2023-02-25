@@ -5,14 +5,13 @@ import com.zestfulYoghurt.zy.mappers.UserMapper;
 import com.zestfulYoghurt.zy.common.TextMessage;
 import com.zestfulYoghurt.zy.pojos.basePojo.ResultBean;
 import com.zestfulYoghurt.zy.pojos.basePojo.User;
-import com.zestfulYoghurt.zy.services.Validate;
 import com.zestfulYoghurt.zy.tool.Tools;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import javax.annotation.Resource;
 
 @Service("registerServiceImp")
-public class RegisterServiceImp implements RegisterService {
+public class RegisterServiceImp {//implements RegisterService {
 
     //用户重复
     public static final int REPETITION = 1;
@@ -23,18 +22,14 @@ public class RegisterServiceImp implements RegisterService {
     @Autowired
     private UserMapper userMapper;
 
-    @Resource(name = "Validate")
-    private Validate validate;
-
     private ResultBean resultBean;
 
 
     //用户注册功能 todo 实现用户注册服务
-    @Override
+  /*  @Override
     public ResultBean register(User user) {
-
-        //向数据库插入用户信息之前进行用户名是否重复验证
-        int ifRepetition = validate.userNameRepetitionValidate(user);
+*/
+/*        //向数据库插入用户信息之前进行用户名是否重复验证
 
         //将用户的密码进行加密,md5,两次加密
         String encryptionPassword = Tools.encryption.passwordEncryption(user.getPassword(), user.getUserName());
@@ -65,8 +60,8 @@ public class RegisterServiceImp implements RegisterService {
         }
 
 
-        return resultBean;
+        return resultBean;*/
 
-    }
+   // }
 
 }

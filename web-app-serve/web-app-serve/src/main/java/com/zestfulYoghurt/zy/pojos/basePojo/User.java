@@ -1,9 +1,15 @@
 package com.zestfulYoghurt.zy.pojos.basePojo;
 
+import com.fasterxml.jackson.core.JsonProcessingException;
+import com.fasterxml.jackson.databind.ObjectMapper;
 import lombok.Data;
 
+import java.io.IOException;
 import java.io.Serializable;
+import java.util.List;
 import java.util.Set;
+
+import static org.springframework.data.repository.init.ResourceReader.Type.JSON;
 
 /**
  * ClassName user
@@ -76,6 +82,9 @@ public class User implements Serializable {
     //定义用户拥有的角色
     private Set<Role> roles;
 
+    //存到数据库字符串格式的roles
+    private String rolesDB;
+
 
     //用户信息check
     private boolean isValued = true;
@@ -90,6 +99,19 @@ public class User implements Serializable {
         }
 
         return isValued;
+    }
+
+    //用户数据初始化
+    public void dataConvert() throws IOException {
+        ObjectMapper objectMapper = new ObjectMapper();
+        if (roles != null)
+        {
+            rolesDB = objectMapper.writeValueAsString(roles);
+        }
+        if(rolesDB != null)
+        {
+            roles = objectMapper.readValue(rolesDB,Set.class);
+        }
     }
 
 }

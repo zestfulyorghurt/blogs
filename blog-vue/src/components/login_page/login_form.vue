@@ -28,7 +28,7 @@
       <!-- 登录或注册按钮 -->
       <div class="flex_row_center">
         <button class="button_style" @click="login">登录</button>
-        <button class="button_style">注册</button>
+        <button class="button_style" @click="regist">注册</button>
       </div>
     </div>
   </div>
@@ -108,6 +108,16 @@ export default {
             }
             return config
           })
+    },
+    regist()
+    {
+      console.log("----用户进行登录----")
+      // 用户信息封装
+      const user = { userName: this.userName, password: this.password }
+      //调用登录api
+      this.$api.login.doRegiste(user).then((res) =>{
+        console.log(res)
+      })
     }
   },
 }
@@ -164,8 +174,6 @@ export default {
 }
 
 #login_form {
-  margin: 0px auto;
-  margin-top: 200px;
   width: 500px;
   border: 1px solid #e6e6eb;
   border-radius: 10px;

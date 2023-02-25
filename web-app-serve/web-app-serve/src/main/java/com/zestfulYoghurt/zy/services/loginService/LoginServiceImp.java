@@ -12,6 +12,7 @@ import org.apache.shiro.subject.Subject;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import javax.annotation.Resource;
 import java.util.*;
 
 /**
@@ -25,7 +26,7 @@ import java.util.*;
 @Slf4j
 public class LoginServiceImp implements LoginService {
 
-    @Autowired
+    @Resource
     private UserMapper userMapper;
 
     private User user;
