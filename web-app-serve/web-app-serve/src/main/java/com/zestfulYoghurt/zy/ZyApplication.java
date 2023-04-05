@@ -1,6 +1,6 @@
 package com.zestfulYoghurt.zy;
 
-import com.zestfulYoghurt.zy.common.MyExceptionResolver;
+import com.zestfulYoghurt.zy.common.ExResolverCustom;
 import org.mybatis.spring.annotation.MapperScan;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -11,14 +11,12 @@ import org.springframework.context.annotation.Bean;
 public class ZyApplication {
 
     public static void main(String[] args) {
-
         SpringApplication.run(ZyApplication.class, args);
-
     }
 
     // 注册统一异常处理bean
     @Bean
-    public MyExceptionResolver myExceptionResolver() {
-        return new MyExceptionResolver();
+    public ExResolverCustom myExceptionResolver() {
+        return new ExResolverCustom();
     }
 }

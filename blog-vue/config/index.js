@@ -13,7 +13,7 @@ module.exports = {
     proxyTable:{
       "/api": {
         // 本地mock服务器
-        target: "http://localhost:8086",
+        target: "http://localhost:8090",
         changeOrigin: true,
         pathRewrite: {
           '/api':''

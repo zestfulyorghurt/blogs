@@ -1,5 +1,12 @@
 package com.zestfulYoghurt.zy.tool;
 
+import java.util.Date;
+import java.util.HashMap;
+
+import org.springframework.stereotype.Component;
+
+import com.zestfulYoghurt.zy.pojos.User;
+
 import io.jsonwebtoken.Claims;
 import io.jsonwebtoken.JwtBuilder;
 import io.jsonwebtoken.Jwts;
@@ -7,10 +14,6 @@ import io.jsonwebtoken.SignatureAlgorithm;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
-import org.springframework.stereotype.Component;
-
-import java.text.SimpleDateFormat;
-import java.util.Date;
 
 @Component
 @Data
@@ -18,45 +21,29 @@ import java.util.Date;
 @NoArgsConstructor
 public class JwtUtil {
 
-    //定义盐
     private String salt;
-
-    //定义token过期时间
     private long ttl;
 
-    //创建token
-    public String createJWT(String id,String subject,String roles){
-
-        //获取当前时间
+    public static String createJWT(User user){
         long nowMillis = System.currentTimeMillis();
-
         Date now = new Date(nowMillis);
-
-        JwtBuilder builder =  Jwts.builder().setId(id)
-                      .setSubject(subject)
+        HashMap<String,Object> map = new HashMap<String,Object>();
+        JwtBuilder builder =  Jwts.builder()
+        		      //.setId(id)
+                      //.setSubject(subject)
+        		      .setClaims(map)
                       .setIssuedAt(now)
-                      .signWith(SignatureAlgorithm.HS256,"admin")
-                      .claim("roles",roles);
-
-        if(ttl > 0){
-
-            //设置到期时间
-            builder.setExpiration(new Date(nowMillis + ttl));
-
-        }
-
+                      //.setExpiration(new Date(System.currentTimeMillis() + 30*1000)) //设置jwt过期时间
+                      .signWith(SignatureAlgorithm.HS256,"admin");
         return builder.compact();
 
     }
 
-    //解析token
-    public Claims parseJWT(String jwtStr){
-
+    public static Claims parseJWT(String jwtStr){
         return Jwts.parser()
                    .setSigningKey("admin")
                    .parseClaimsJws(jwtStr)
                    .getBody();
-
     }
 
 }

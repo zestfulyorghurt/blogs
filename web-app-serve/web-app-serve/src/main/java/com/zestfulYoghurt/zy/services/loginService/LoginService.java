@@ -1,7 +1,7 @@
 package com.zestfulYoghurt.zy.services.loginService;
 
-import com.zestfulYoghurt.zy.pojos.basePojo.ResultBean;
-import com.zestfulYoghurt.zy.pojos.basePojo.User;
+import com.zestfulYoghurt.zy.pojos.Result;
+import com.zestfulYoghurt.zy.pojos.User;
 
 /**
  * InterfaceName loginService
@@ -12,6 +12,6 @@ import com.zestfulYoghurt.zy.pojos.basePojo.User;
  **/
 public interface LoginService {
 
-    ResultBean loginCheckOut(String username, String password);
+    Result<Object> login(User user);
 
 }

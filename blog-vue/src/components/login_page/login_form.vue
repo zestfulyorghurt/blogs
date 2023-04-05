@@ -29,6 +29,7 @@
       <div class="flex_row_center">
         <button class="button_style" @click="login">登录</button>
         <button class="button_style" @click="regist">注册</button>
+        <button class="button_style" @click="test">测试</button>
       </div>
     </div>
   </div>
@@ -50,10 +51,10 @@ export default {
     login() {
       console.log("----用户进行登录----")
       // 用户信息封装
-      const user = { userName: this.userName, password: this.password }
+      const user = { userName: this.userName,nickName: this.userName, password: this.password }
       //调用登录api
       this.$api.login.doLogin(user).then((res) =>{
-        console.log(res)
+        localStorage.setItem("token",res.data.data.token)
       })
       
       // this.$axios({
@@ -111,11 +112,16 @@ export default {
     },
     regist()
     {
-      console.log("----用户进行登录----")
       // 用户信息封装
-      const user = { userName: this.userName, password: this.password }
+      const user = {userName: this.userName, nickName: this.userName, password: this.password }
       //调用登录api
       this.$api.login.doRegiste(user).then((res) =>{
+        console.log(res)
+      })
+    },
+    test()
+    {
+      this.$api.blog.test().then((res) =>{
         console.log(res)
       })
     }

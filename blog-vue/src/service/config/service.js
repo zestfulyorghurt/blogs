@@ -16,7 +16,11 @@
 
     // 设置请求发起前的拦截
     instence.interceptors.request.use((config) => {
-        //这里可以做请求拦截 config.headers['X-Token'] = token  
+        //这里可以做请求拦截 config.headers['X-Token'] = token
+        if(localStorage.getItem("token") != null)
+        {
+            config.headers['Authorization'] = localStorage.getItem("token");  
+        }
         console.log("请求拦截",config);
         return config;  
     },(error) => {

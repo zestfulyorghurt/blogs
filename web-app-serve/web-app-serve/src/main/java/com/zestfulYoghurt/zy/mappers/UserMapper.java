@@ -1,10 +1,8 @@
 package com.zestfulYoghurt.zy.mappers;
 
-import com.zestfulYoghurt.zy.pojos.basePojo.User;
 import org.apache.ibatis.annotations.Mapper;
 
-import java.util.List;
-import java.util.Map;
+import com.zestfulYoghurt.zy.pojos.User;
 
 /**
  * InterfaceName userMapper
@@ -16,7 +14,7 @@ import java.util.Map;
 @Mapper
 public interface UserMapper {
 
-    List<User> select(User user);
+    User select(User user);
 
     void insert(User user);
 }

@@ -6,6 +6,10 @@ const blogs =
     {
         console.log(data)
         return api.post("",data)
+    },
+    test()
+    {
+        return api.get("/api/Test","");
     }
 }
 

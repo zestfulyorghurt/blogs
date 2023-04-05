@@ -1,8 +1,7 @@
 package com.zestfulYoghurt.zy;
+import org.junit.Test;
 
 import com.zestfulYoghurt.zy.tool.JwtUtil;
-import io.jsonwebtoken.Claims;
-import org.junit.Test;
 
 public class TEST {
 
@@ -13,13 +12,13 @@ public class TEST {
 
         JwtUtil jwtUtil = new JwtUtil("Zest",ttl);
 
-        String jwt = jwtUtil.createJWT("1", "sj", "admin");
+        //String jwt = jwtUtil.createJWT("1", "sj", "admin");
 
-        System.out.println(jwt);
+        /*System.out.println(jwt);
 
-        Claims claims = jwtUtil.parseJWT(jwt);
+        Claims claims = jwtUtil.parseJWT(jwt);*/
 
-        System.out.println(claims);
+        //System.out.println(claims);
 
     }
 
