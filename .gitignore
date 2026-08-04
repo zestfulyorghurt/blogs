@@ -1,0 +1,51 @@
+# Root workspace ignore rules
+# This repo contains multiple app folders; ignore generated files at the repo root level.
+
+# Dependency folders
+**/node_modules/
+**/vendor/
+
+# Build artifacts
+**/dist/
+blog-react/dist/
+blog-react/node_modules/
+**/build/
+**/coverage/
+**/.vite/
+**/target/
+**/out/
+**/*.class
+
+# Generated / cache folders
+**/.cache/
+**/.next/
+**/.nuxt/
+**/.parcel-cache/
+**/.turbo/
+**/.eslintcache
+**/logs/
+**/tmp/
+**/temp/
+
+# IDE / OS
+**/.vscode/
+**/.idea/
+**/.DS_Store
+**/Thumbs.db
+**/*.swp
+**/*.tmp
+
+# Local env files
+**/.env
+**/.env.*
+!**/.env.example
+
+# Java / .NET / React / Vue generated folders
+**/bin/
+**/obj/
+**/.gradle/
+**/npm-debug.log*
+**/yarn-debug.log*
+**/yarn-error.log*
+**/pnpm-debug.log*
+**/*.log
