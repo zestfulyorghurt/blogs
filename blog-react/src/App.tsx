@@ -10,6 +10,7 @@ import {
 import SearchPage from "@/view/page/SearchPage";
 import LoginPage from "@/view/page/LoginPage";
 import RegisterPage from "@/view/page/RegisterPage";
+import ErrorPage from "@/view/page/ErrorPage";
 import LanguageSwitcher from "@/view/components/LanguageSwitcher";
 import { useTranslation } from "@/hooks/useTranslation";
 
@@ -200,6 +201,7 @@ function App() {
       <Route path="/search" element={<SearchPage />} />
       <Route path="/login" element={<LoginPage />} />
       <Route path="/register" element={<RegisterPage />} />
+      <Route path="/error" element={<ErrorPage />} />
     </Routes>
   );
 }

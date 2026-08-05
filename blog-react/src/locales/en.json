@@ -67,5 +67,11 @@
     "settings": "Settings",
     "footer": "© 2026 Educom. All rights reserved.",
     "openMenu": "Open menu"
+  },
+  "error": {
+    "title": "Something went wrong",
+    "description": "An unexpected error occurred. Please try again or go back home.",
+    "backHome": "Back home",
+    "retry": "Retry"
   }
 }
