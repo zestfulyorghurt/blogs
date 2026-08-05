@@ -73,5 +73,13 @@
     "description": "An unexpected error occurred. Please try again or go back home.",
     "backHome": "Back home",
     "retry": "Retry"
+  },
+  "theme": {
+    "title": "Theme color",
+    "white": "White",
+    "black": "Black",
+    "aurora": "Iridescent black",
+    "sunset": "Sunset",
+    "ocean": "Ocean"
   }
 }

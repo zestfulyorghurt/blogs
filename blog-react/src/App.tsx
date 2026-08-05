@@ -12,6 +12,7 @@ import LoginPage from "@/view/page/LoginPage";
 import RegisterPage from "@/view/page/RegisterPage";
 import ErrorPage from "@/view/page/ErrorPage";
 import LanguageSwitcher from "@/view/components/LanguageSwitcher";
+import ThemeColorSwitcher from "@/view/components/ThemeColorSwitcher";
 import { useTranslation } from "@/hooks/useTranslation";
 
 /**
@@ -172,6 +173,7 @@ function App() {
                       <button type="button">{t("common.newsletter")}</button>
                     </Link>
                     <LanguageSwitcher />
+                    <ThemeColorSwitcher />
                   </>
                 }
               />

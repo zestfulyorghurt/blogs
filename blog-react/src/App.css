@@ -100,7 +100,7 @@
 .header-link button {
   border: none;
   border-radius: 12px;
-  background: #2563eb;
+  background: var(--tech-accent);
   color: #fff;
   padding: 10px 16px;
   cursor: pointer;
@@ -132,7 +132,7 @@
 
 .primary-btn,
 .newsletter-card button {
-  background: linear-gradient(135deg, var(--tech-accent), var(--tech-accent-2));
+  background: var(--tech-accent);
   color: #fff;
   padding: 12px 18px;
   font-weight: 600;
@@ -140,7 +140,7 @@
 
 .ghost-btn {
   background: transparent;
-  border: 1px solid #cbd5e1;
+  border: 1px solid var(--tech-line);
   color: var(--tech-text);
   padding: 12px 18px;
   font-weight: 600;
@@ -319,7 +319,7 @@
 
 .newsletter-card input {
   width: 100%;
-  border: 1px solid #cbd5e1;
+  border: 1px solid var(--tech-line);
   border-radius: 10px;
   padding: 12px 14px;
   margin: 12px 0 14px;
@@ -390,7 +390,7 @@
 }
 
 .lang-btn.active {
-  background: #2563eb;
+  background: var(--tech-accent);
   color: #fff;
   box-shadow: 0 2px 8px rgba(37, 99, 235, 0.35);
 }

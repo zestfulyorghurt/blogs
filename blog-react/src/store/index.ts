@@ -3,5 +3,9 @@
  * 方便业务代码按桶导入。
  */
 export { useAuthStore } from "@/store/authStore";
-export { useThemeStore } from "@/store/themeStore";
+export {
+  useThemeColorStore,
+  THEME_COLORS,
+  initThemeColor,
+} from "@/store/themeStore";
 export { useSidebarStore } from "@/store/sidebarStore";

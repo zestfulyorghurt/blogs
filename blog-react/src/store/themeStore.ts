@@ -1,45 +1,86 @@
 import { create } from "zustand";
+import { persist, createJSONStorage } from "zustand/middleware";
 
-/** 主题模式：浅色、深色或跟随系统。 */
-type Theme = "light" | "dark" | "system";
+/** 可选的主题色标识。 */
+export type ThemeColorKey = "white" | "black" | "aurora" | "sunset" | "ocean";
 
-/** 主题状态的形状。 */
-type ThemeState = {
-  theme: Theme;
-  resolvedTheme: "light" | "dark";
+/** 主题色预设：key 用于状态与 data-theme-color，labelKey 取多语言，swatch 为色块预览。 */
+export const THEME_COLORS: {
+  key: ThemeColorKey;
+  labelKey: string;
+  swatch: string;
+}[] = [
+  {
+    key: "white",
+    labelKey: "theme.white",
+    swatch: "linear-gradient(135deg,#2563eb,#7c3aed)",
+  },
+  {
+    key: "black",
+    labelKey: "theme.black",
+    swatch: "linear-gradient(135deg,#6366f1,#ec4899)",
+  },
+  {
+    key: "aurora",
+    labelKey: "theme.aurora",
+    swatch: "linear-gradient(90deg,#ff0080,#7928ca,#00d4ff,#2afadf)",
+  },
+  {
+    key: "sunset",
+    labelKey: "theme.sunset",
+    swatch: "linear-gradient(135deg,#f97316,#ec4899)",
+  },
+  {
+    key: "ocean",
+    labelKey: "theme.ocean",
+    swatch: "linear-gradient(135deg,#0ea5e9,#14b8a6)",
+  },
+];
+
+type ThemeColorState = {
+  themeColor: ThemeColorKey;
 };
 
-/** 主题相关的操作。 */
-type ThemeActions = {
-  setTheme: (theme: Theme) => void;
-  toggleTheme: () => void;
+type ThemeColorActions = {
+  setThemeColor: (key: ThemeColorKey) => void;
 };
 
-/** 主题状态仓库的类型（状态 + 操作）。 */
-export type ThemeStore = ThemeState & ThemeActions;
+/** 主题色状态仓库的类型（状态 + 操作）。 */
+export type ThemeColorStore = ThemeColorState & ThemeColorActions;
+
+/** 把当前主题色写到 <html data-theme-color>，驱动 CSS 变量切换。 */
+function applyThemeColor(key: ThemeColorKey) {
+  if (typeof document !== "undefined") {
+    document.documentElement.setAttribute("data-theme-color", key);
+  }
+}
 
 /**
- * 全局主题状态仓库。setTheme 会依据 'system' 解析为实际明暗，
- * toggleTheme 在 light → dark → system 之间循环切换。
+ * 全局主题色状态仓库。选择持久化到 localStorage，
+ * 刷新后保留；onRehydrateStorage 在水合后重新应用属性。
  */
-export const useThemeStore = create<ThemeStore>((set, get) => ({
-  theme: "system",
-  resolvedTheme: "light",
+export const useThemeColorStore = create<ThemeColorStore>()(
+  persist(
+    (set) => ({
+      themeColor: "white",
+      setThemeColor: (key) => {
+        applyThemeColor(key);
+        set({ themeColor: key });
+      },
+    }),
+    {
+      name: "theme-color-storage",
+      storage: createJSONStorage(() => localStorage),
+      onRehydrateStorage: () => (state) => {
+        if (state) {
+          applyThemeColor(state.themeColor);
+        }
+      },
+    },
+  ),
+);
 
-  setTheme: (theme: Theme) => {
-    const resolvedTheme =
-      theme === "system"
-        ? window.matchMedia("(prefers-color-scheme: dark)").matches
-          ? "dark"
-          : "light"
-        : theme;
-    set({ theme, resolvedTheme });
-  },
-
-  toggleTheme: () => {
-    const current = get().theme;
-    const next =
-      current === "light" ? "dark" : current === "dark" ? "system" : "light";
-    get().setTheme(next);
-  },
-}));
+/** 应用启动阶段调用，预应用初始主题色（含持久化后的值）。 */
+export function initThemeColor() {
+  applyThemeColor(useThemeColorStore.getState().themeColor);
+}

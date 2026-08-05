@@ -73,5 +73,13 @@
     "description": "页面遇到了意外错误，请重试或返回首页。",
     "backHome": "返回首页",
     "retry": "重试"
+  },
+  "theme": {
+    "title": "主题颜色",
+    "white": "白色",
+    "black": "黑色",
+    "aurora": "五彩斑斓的黑",
+    "sunset": "日落",
+    "ocean": "海洋"
   }
 }
