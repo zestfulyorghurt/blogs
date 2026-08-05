@@ -1,4 +1,5 @@
 import './App.css'
+import { Link, Routes, Route } from 'react-router-dom'
 import {
   Header,
   Sidebar,
@@ -6,132 +7,162 @@ import {
   Footer,
   MainLayout,
 } from '@/view/layout/MainLayout'
+import SearchPage from '@/view/page/SearchPage'
+import LoginPage from '@/view/page/LoginPage'
+import RegisterPage from '@/view/page/RegisterPage'
+import LanguageSwitcher from '@/view/components/LanguageSwitcher'
+import { useTranslation } from '@/hooks/useTranslation'
 
-function App() {
+function HomePage() {
+  const { t } = useTranslation()
+
   return (
-    <MainLayout
-      header={
-        <Header
-          title="CodeNotes"
-          actions={
-            <>
-              <button type="button">Search</button>
-              <button type="button">Newsletter</button>
-            </>
-          }
-        />
-      }
-      sidebar={<Sidebar activeItem="Home" items={['Home', 'Frontend', 'Backend', 'DevOps', 'Architecture', 'About']} />}
-      content={
-        <MainContent>
-          <div className="blog-home tech-blog">
-            <section className="hero-panel tech-hero">
-              <div className="hero-copy">
-                <p className="hero-kicker">Engineering journal</p>
-                <h2>Build smarter products.</h2>
-                <p>
-                  Practical notes on React, TypeScript, backend systems, performance tuning, and the craft of shipping real software.
-                </p>
-                <div className="hero-actions">
-                  <button type="button" className="primary-btn">Latest articles</button>
-                  <button type="button" className="ghost-btn">About the author</button>
+    <div className="blog-home tech-blog">
+      <section className="hero-panel tech-hero">
+        <div className="hero-copy">
+          <p className="hero-kicker">{t('home.heroKicker')}</p>
+          <h2>{t('home.heroTitle')}</h2>
+          <p>
+            {t('home.heroDescription')}
+          </p>
+          <div className="hero-actions">
+            <button type="button" className="primary-btn">{t('home.latestArticles')}</button>
+            <button type="button" className="ghost-btn">{t('home.aboutAuthor')}</button>
+          </div>
+        </div>
+        <div className="hero-highlight">
+          <span className="mini-label">{t('home.featured')}</span>
+          <h3>{t('home.featuredTitle')}</h3>
+          <p>{t('home.featuredDescription')}</p>
+        </div>
+      </section>
+
+      <div className="content-columns">
+        <div className="posts-column">
+          <article className="post-card featured-post">
+            <div className="post-meta">
+              <span>{t('home.frontend')}</span>
+              <span>8 min read</span>
+            </div>
+            <h3>React + TypeScript architecture patterns that actually hold up</h3>
+            <p>
+              A practical guide to structuring component systems, shared logic, and scalable state boundaries without overengineering.
+            </p>
+          </article>
+
+          <div className="post-grid">
+            <article className="post-card">
+              <div className="post-thumb thumb-one" />
+              <div className="post-body">
+                <div className="post-meta">
+                  <span>{t('home.backend')}</span>
+                  <span>6 min read</span>
                 </div>
+                <h4>{t('home.apiDesign')}</h4>
+                <p>How to keep contracts clear, versioning predictable, and failures debuggable at scale.</p>
               </div>
-              <div className="hero-highlight">
-                <span className="mini-label">Featured</span>
-                <h3>Designing observable frontends that scale</h3>
-                <p>Patterns for resilient UI architecture, metrics, and debugging workflows in growing product teams.</p>
+            </article>
+
+            <article className="post-card">
+              <div className="post-thumb thumb-two" />
+              <div className="post-body">
+                <div className="post-meta">
+                  <span>{t('home.performance')}</span>
+                  <span>5 min read</span>
+                </div>
+                <h4>{t('home.profilingReact')}</h4>
+                <p>From memoization mistakes to measuring the real bottlenecks in UI interactions.</p>
               </div>
-            </section>
+            </article>
 
-            <div className="content-columns">
-              <div className="posts-column">
-                <article className="post-card featured-post">
-                  <div className="post-meta">
-                    <span>Frontend</span>
-                    <span>8 min read</span>
-                  </div>
-                  <h3>React + TypeScript architecture patterns that actually hold up</h3>
-                  <p>
-                    A practical guide to structuring component systems, shared logic, and scalable state boundaries without overengineering.
-                  </p>
-                </article>
-
-                <div className="post-grid">
-                  <article className="post-card">
-                    <div className="post-thumb thumb-one" />
-                    <div className="post-body">
-                      <div className="post-meta">
-                        <span>Backend</span>
-                        <span>6 min read</span>
-                      </div>
-                      <h4>API design for a multi-service product</h4>
-                      <p>How to keep contracts clear, versioning predictable, and failures debuggable at scale.</p>
-                    </div>
-                  </article>
-
-                  <article className="post-card">
-                    <div className="post-thumb thumb-two" />
-                    <div className="post-body">
-                      <div className="post-meta">
-                        <span>Performance</span>
-                        <span>5 min read</span>
-                      </div>
-                      <h4>Profiling and optimizing React renders</h4>
-                      <p>From memoization mistakes to measuring the real bottlenecks in UI interactions.</p>
-                    </div>
-                  </article>
-
-                  <article className="post-card">
-                    <div className="post-thumb thumb-three" />
-                    <div className="post-body">
-                      <div className="post-meta">
-                        <span>DevOps</span>
-                        <span>4 min read</span>
-                      </div>
-                      <h4>CI pipelines that catch regressions early</h4>
-                      <p>Building reliable release flows with fast feedback, safer automation, and better ownership.</p>
-                    </div>
-                  </article>
+            <article className="post-card">
+              <div className="post-thumb thumb-three" />
+              <div className="post-body">
+                <div className="post-meta">
+                  <span>{t('home.devops')}</span>
+                  <span>4 min read</span>
                 </div>
+                <h4>{t('home.ciPipelines')}</h4>
+                <p>Building reliable release flows with fast feedback, safer automation, and better ownership.</p>
               </div>
+            </article>
+          </div>
+        </div>
 
-              <aside className="blog-aside">
-                <div className="profile-card">
-                  <div className="avatar">DW</div>
-                  <h3>Daniel Wu</h3>
-                  <p>Frontend engineer, systems thinker, and builder of clean interfaces.</p>
-                </div>
+        <aside className="blog-aside">
+          <div className="profile-card">
+            <div className="avatar">DW</div>
+            <h3>{t('home.profileName')}</h3>
+            <p>{t('home.profileDesc')}</p>
+          </div>
 
-                <div className="stats-card">
-                  <h4>Writing stats</h4>
-                  <div className="stat-row">
-                    <span>Articles</span>
-                    <strong>84</strong>
-                  </div>
-                  <div className="stat-row">
-                    <span>Followers</span>
-                    <strong>24.8k</strong>
-                  </div>
-                  <div className="stat-row">
-                    <span>Open source</span>
-                    <strong>17</strong>
-                  </div>
-                </div>
-
-                <div className="newsletter-card">
-                  <h4>Developer digest</h4>
-                  <p>One practical update every Friday.</p>
-                  <input type="email" placeholder="Email address" />
-                  <button type="button">Join now</button>
-                </div>
-              </aside>
+          <div className="stats-card">
+            <h4>{t('home.writingStats')}</h4>
+            <div className="stat-row">
+              <span>{t('home.articles')}</span>
+              <strong>84</strong>
+            </div>
+            <div className="stat-row">
+              <span>{t('home.followers')}</span>
+              <strong>24.8k</strong>
+            </div>
+            <div className="stat-row">
+              <span>{t('home.openSource')}</span>
+              <strong>17</strong>
             </div>
           </div>
-        </MainContent>
-      }
-      footer={<Footer text="© 2026 CodeNotes. Engineering notes for curious builders." />}
-    />
+
+          <div className="newsletter-card">
+            <h4>{t('home.developerDigest')}</h4>
+            <p>{t('home.oneUpdate')}</p>
+            <input type="email" placeholder={t('home.emailAddress')} />
+            <button type="button">{t('home.joinNow')}</button>
+          </div>
+        </aside>
+      </div>
+    </div>
+  )
+}
+
+function App() {
+  const { t } = useTranslation()
+
+  return (
+    <Routes>
+      <Route
+        path="/"
+        element={
+          <MainLayout
+            header={
+              <Header
+                title="CodeNotes"
+                actions={
+                  <>
+                    <Link to="/search" className="header-link">
+                      <button type="button">{t('common.search')}</button>
+                    </Link>
+                    <Link to="/login" className="header-link">
+                      <button type="button">{t('common.newsletter')}</button>
+                    </Link>
+                    <LanguageSwitcher />
+                  </>
+                }
+              />
+            }
+            sidebar={<Sidebar activeItem={t('home.home')} items={[t('home.home'), t('home.frontend'), t('home.backend'), t('home.devops'), t('home.architecture'), t('home.about')]} />}
+            content={
+              <MainContent>
+                <HomePage />
+              </MainContent>
+            }
+            footer={<Footer text={t('common.footer')} />}
+          />
+        }
+      />
+      <Route path="/search" element={<SearchPage />} />
+      <Route path="/login" element={<LoginPage />} />
+      <Route path="/register" element={<RegisterPage />} />
+    </Routes>
   )
 }
 

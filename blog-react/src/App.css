@@ -96,10 +96,32 @@
   flex-wrap: wrap;
 }
 
+.header-actions button,
+.header-link button {
+  border: none;
+  border-radius: 12px;
+  background: #2563eb;
+  color: #fff;
+  padding: 10px 16px;
+  cursor: pointer;
+  transition: opacity 0.2s ease;
+}
+
+.header-actions button:hover,
+.header-link button:hover {
+  opacity: 0.9;
+}
+
+.header-link {
+  text-decoration: none;
+  display: inline-flex;
+}
+
 .primary-btn,
 .ghost-btn,
 .newsletter-card button,
-.header-actions button {
+.header-actions button,
+.header-link button {
   border: none;
   border-radius: 12px;
   cursor: pointer;
@@ -125,7 +147,8 @@
 .primary-btn:hover,
 .ghost-btn:hover,
 .newsletter-card button:hover,
-.header-actions button:hover {
+.header-actions button:hover,
+.header-link button:hover {
   transform: translateY(-1px);
   opacity: 0.96;
 }
@@ -334,5 +357,44 @@
   .header-actions {
     width: 100%;
     justify-content: flex-start;
+  }
+}
+
+/* ========== Language Switcher ========== */
+.language-switcher {
+  display: inline-flex;
+  gap: 4px;
+  padding: 4px;
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.lang-btn {
+  border: none;
+  border-radius: 8px;
+  padding: 6px 10px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  cursor: pointer;
+  background: transparent;
+  color: #e2e8f0;
+  transition: all 0.2s ease;
+}
+
+.lang-btn:hover {
+  background: rgba(255, 255, 255, 0.1);
+  color: #fff;
+}
+
+.lang-btn.active {
+  background: #2563eb;
+  color: #fff;
+  box-shadow: 0 2px 8px rgba(37, 99, 235, 0.35);
+}
+
+@media (max-width: 640px) {
+  .language-switcher {
+    margin-top: 8px;
   }
 }

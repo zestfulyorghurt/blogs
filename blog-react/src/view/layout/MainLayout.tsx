@@ -1,4 +1,5 @@
 import { cloneElement, useState, type ReactElement, type ReactNode } from 'react'
+import { useTranslation } from '@/hooks/useTranslation'
 import './mainLayout.css'
 
 type MainLayoutProps = {
@@ -28,13 +29,15 @@ type FooterProps = {
 }
 
 export function Header({ title = 'Educom', actions, onMenuClick }: HeaderProps) {
+  const { t } = useTranslation()
+
   return (
     <header className="layout-header">
       <div className="brand-wrap">
         <button
           type="button"
           className="mobile-menu-toggle"
-          aria-label="Open menu"
+          aria-label={t('common.openMenu')}
           onClick={onMenuClick}
         >
           <span />
@@ -43,7 +46,7 @@ export function Header({ title = 'Educom', actions, onMenuClick }: HeaderProps) 
         </button>
         <div className="brand-mark">E</div>
         <div>
-          <p className="eyebrow">Learning platform</p>
+          <p className="eyebrow">{t('mainLayout.eyebrow')}</p>
           <h1>{title}</h1>
         </div>
       </div>
@@ -53,11 +56,20 @@ export function Header({ title = 'Educom', actions, onMenuClick }: HeaderProps) 
   )
 }
 
-export function Sidebar({ items = ['Dashboard', 'Courses', 'Schedule', 'Reports', 'Settings'], activeItem = 'Dashboard' }: SidebarProps) {
+export function Sidebar({ items, activeItem }: SidebarProps) {
+  const { t } = useTranslation()
+  const defaultItems = [
+    t('mainLayout.dashboard'),
+    t('mainLayout.courses'),
+    t('mainLayout.schedule'),
+    t('mainLayout.reports'),
+    t('mainLayout.settings'),
+  ]
+
   return (
     <aside className="sidebar-panel">
       <nav className="sidebar-nav" aria-label="Sidebar navigation">
-        {items.map((item) => (
+        {(items ?? defaultItems).map((item) => (
           <button
             key={item}
             type="button"
@@ -75,10 +87,12 @@ export function MainContent({ children }: MainContentProps) {
   return <main className="layout-main">{children}</main>
 }
 
-export function Footer({ text = '© 2026 Educom. All rights reserved.' }: FooterProps) {
+export function Footer({ text }: FooterProps) {
+  const { t } = useTranslation()
+
   return (
     <footer className="layout-footer">
-      <span>{text}</span>
+      <span>{text ?? t('mainLayout.footer')}</span>
     </footer>
   )
 }
