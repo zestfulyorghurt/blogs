@@ -1,91 +1,102 @@
-import { useState, type FormEvent } from 'react'
-import { Link, useNavigate } from 'react-router-dom'
-import { useMutation } from 'urql'
-import { LOGIN } from '@/api/mutations/auth'
-import { useAuthStore } from '@/store/authStore'
-import AuthLayout from '@/view/layout/AuthLayout'
-import { useTranslation } from '@/hooks/useTranslation'
+import { useState, type FormEvent } from "react";
+import { Link, useNavigate } from "react-router-dom";
+import { useMutation } from "urql";
+import { LOGIN } from "@/api/mutations/auth";
+import { useAuthStore } from "@/store/authStore";
+import AuthLayout from "@/view/layout/AuthLayout";
+import { useTranslation } from "@/hooks/useTranslation";
 
+/** 登录表单的字段状态。 */
 type LoginForm = {
-  email: string
-  password: string
-}
+  email: string;
+  password: string;
+};
 
+/**
+ * 登录页面：提交后调用 GraphQL login 变更，成功则写入用户并跳转首页，
+ * 失败则在页面上展示错误信息。
+ *
+ * @returns {JSX.Element} 渲染后的登录页面。
+ */
 function LoginPage() {
-  const { t } = useTranslation()
-  const navigate = useNavigate()
-  const setUser = useAuthStore((state) => state.setUser)
-  const setLoading = useAuthStore((state) => state.setLoading)
-  const [{ fetching }, loginMutation] = useMutation(LOGIN)
+  const { t } = useTranslation();
+  const navigate = useNavigate();
+  const setUser = useAuthStore((state) => state.setUser);
+  const setLoading = useAuthStore((state) => state.setLoading);
+  const [{ fetching }, loginMutation] = useMutation(LOGIN);
 
-  const [form, setForm] = useState<LoginForm>({ email: '', password: '' })
-  const [error, setError] = useState<string | null>(null)
+  const [form, setForm] = useState<LoginForm>({ email: "", password: "" });
+  const [error, setError] = useState<string | null>(null);
 
   const handleSubmit = async (e: FormEvent) => {
-    e.preventDefault()
-    setError(null)
-    setLoading(true)
+    e.preventDefault();
+    setError(null);
+    setLoading(true);
 
     try {
-      const result = await loginMutation({ input: { email: form.email, password: form.password } })
+      const result = await loginMutation({
+        input: { email: form.email, password: form.password },
+      });
       if (result.error) {
-        setError(result.error.message)
-        return
+        setError(result.error.message);
+        return;
       }
       if (result.data?.login?.user) {
-        setUser(result.data.login.user)
-        navigate('/')
+        setUser(result.data.login.user);
+        navigate("/");
       }
     } catch {
-      setError(t('auth.loginFailed'))
+      setError(t("auth.loginFailed"));
     } finally {
-      setLoading(false)
+      setLoading(false);
     }
-  }
+  };
 
   return (
     <AuthLayout
-      brandTitle={t('auth.login')}
-      brandSubtitle={t('auth.loginSubtitle')}
-      footerText={t('common.footer')}
+      brandTitle={t("auth.login")}
+      brandSubtitle={t("auth.loginSubtitle")}
+      footerText={t("common.footer")}
     >
       <form onSubmit={handleSubmit}>
         {error && <p className="auth-error">{error}</p>}
 
         <div className="form-field">
-          <label htmlFor="email">{t('auth.email')}</label>
+          <label htmlFor="email">{t("auth.email")}</label>
           <input
             id="email"
             type="email"
             required
-            placeholder={t('auth.emailPlaceholder')}
+            placeholder={t("auth.emailPlaceholder")}
             value={form.email}
             onChange={(e) => setForm((f) => ({ ...f, email: e.target.value }))}
           />
         </div>
 
         <div className="form-field">
-          <label htmlFor="password">{t('auth.password')}</label>
+          <label htmlFor="password">{t("auth.password")}</label>
           <input
             id="password"
             type="password"
             required
-            placeholder={t('auth.passwordPlaceholder')}
+            placeholder={t("auth.passwordPlaceholder")}
             value={form.password}
-            onChange={(e) => setForm((f) => ({ ...f, password: e.target.value }))}
+            onChange={(e) =>
+              setForm((f) => ({ ...f, password: e.target.value }))
+            }
           />
         </div>
 
         <button type="submit" className="auth-submit" disabled={fetching}>
-          {fetching ? t('auth.loggingIn') : t('auth.login')}
+          {fetching ? t("auth.loggingIn") : t("auth.login")}
         </button>
 
         <p className="auth-switch">
-          {t('auth.noAccount')} <Link to="/register">{t('auth.register')}</Link>
+          {t("auth.noAccount")} <Link to="/register">{t("auth.register")}</Link>
         </p>
       </form>
     </AuthLayout>
-  )
+  );
 }
 
-export default LoginPage
+export default LoginPage;
